@@ -73,13 +73,10 @@ module.exports = {
         },
         ],
         sidebar: [{
-            title: 'Introduzione',
+            title: 'Scegliere gli SSDT',
             collapsable: false,
             sidebarDepth: 1,
-            children: [
-                ['', 'Iniziamo con ACPI'],
-                ['ssdt-platform', 'Scegliere gli SSDT'],
-            ]
+            path: 'ssdt-platform'
 
         },
         {
