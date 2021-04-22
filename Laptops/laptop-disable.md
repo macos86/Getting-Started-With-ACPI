@@ -24,7 +24,7 @@ To start, grab [SSDT-dGPU-Off.dsl](https://github.com/dortania/Getting-Started-W
 
 Next we need to get on Windows, and head to the following:
 
-```
+```text
 Device Manager -> Display Adapters -> dGPU -> Properties -> Details > BIOS device name
 ```
 
@@ -39,11 +39,11 @@ This should provided you with an ACPI path for your dGPU, most commonly:
 
 Now with that, we'll need to change the ACPI path in the SSDT. Main sections:
 
-```
+```c
 External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
 ```
 
-```
+```c
 If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
 ```
 
@@ -59,7 +59,7 @@ To start, grab [SSDT-NoHybGfx.dsl](https://github.com/dortania/Getting-Started-W
 
 Next we need to get on Windows, and head to the following:
 
-```
+```text
 Device Manager -> Display Adapters -> dGPU -> Properties -> Details > BIOS device name
 ```
 
@@ -70,21 +70,21 @@ This should provided you with an ACPI path for your dGPU, most commonly:
 
 Now with that, we'll need to change the ACPI path in the SSDT. Main sections:
 
-```
+```c
 External (_SB_.PCI0.PEG0.PEGP._DSM, MethodObj)    // dGPU ACPI Path
 External (_SB_.PCI0.PEG0.PEGP._PS3, MethodObj)    // dGPU ACPI Path
 ```
 
-```
+```c
 If ((CondRefOf (\_SB.PCI0.PEG0.PEGP._DSM) && CondRefOf (\_SB.PCI0.PEG0.PEGP._PS3)))
 ```
 
-``` text
+```text
  // Card Off Request
  \_SB.PCI0.PEG0.PEGP._DSM (ToUUID ("a486d8f8-0bda-471b-a72b-6042a6b5bee0"), 0x0100, 0x1A, Buffer (0x04)
 ```
 
-```
+```text
  // Card Off
 \_SB.PCI0.PEG0.PEGP._PS3 ()
 ```

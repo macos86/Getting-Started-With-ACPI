@@ -11,7 +11,7 @@ For this guide, we're gonna assume Windows is already on this laptop, as otherwi
 
 Now open DeviceManager, and head to the following:
 
-```
+```text
 Device Manager -> Display Adapters -> Properties -> Details > BIOS device name
 ```
 
@@ -33,7 +33,7 @@ By default, this uses `PCI0.GFX0` for the pathing. you'll want to rename accordi
 
 **Before**:
 
-```
+```c
 External (_SB_.PCI0.GFX0, DeviceObj) <- Rename this
 
 Scope (_SB.PCI0.GFX0) <- Rename this
@@ -47,7 +47,7 @@ Following the example pathing we found, the SSDT should look something like this
 
 **After**:
 
-```
+```c
 External (_SB_.PCI0.GPU0, DeviceObj) <- Renamed
 
 Scope (_SB.PCI0.GPU0) <- Renamed

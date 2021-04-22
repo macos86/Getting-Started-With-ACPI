@@ -23,7 +23,7 @@ So to spoof the GPU, we need to find a couple things:
 
 To find a suitable PCI ID, we'll be using [PCI ID Repository](https://pci-ids.ucw.cz/read/PC/1002) which has a full database of all AMD GPUs. For this example, we'll be creating a Spoof SSDT for the R9 390. For a full list of supported GPUs, please see the [GPU Buyers Guide](https://dortania.github.io/GPU-Buyers-Guide/). The closest match to this GPU would be the 390X, and looking on that site near the top gives us this:
 
-```
+```text
 Vendor 1002 -> Device 1002:67b0
 ```
 
@@ -34,7 +34,7 @@ Now lets break this down into a device ID we can use:
 
 So how do we convert this to a fake ID? Well the format of a fake ID:
 
-```
+```c
 "device-id",
 Buffer (0x04)
 {
@@ -85,13 +85,13 @@ To find the PCI path of a GPU is fairly simple, best way to find it is running W
 
 The second "ACPI" is what we care about:
 
-```
+```text
 ACPI(_SB_)#ACPI(PC02)#ACPI(BR2A)#ACPI(PEGP)#PCI(0000)#PCI(0000)
 ```
 
 Now converting this to an ACPI path is quite simple, remove the `#ACPI` and `#PCI(0000)`:
 
-```
+```text
 \_SB_.PC02.BR2A.PEGP
 ```
 
@@ -99,7 +99,7 @@ Now converting this to an ACPI path is quite simple, remove the `#ACPI` and `#PC
 
 Substitute your SLOTID found above into command `cat /sys/bus/pci/devices/SLOTID/firmware_node/path`, you cat get
 
-```
+```bash
 $ cat /sys/bus/pci/devices/0000:01:00.0/firmware_node/path
 \_SB_.PC02.BR2A.PEGP
 ```
@@ -128,7 +128,7 @@ So the 2 parts we want to change:
 
 **device ID**:
 
-```
+```c
 "device-id",
 Buffer (0x04)
 {
@@ -138,7 +138,7 @@ Buffer (0x04)
 
 **Model**:
 
-```
+```c
 "model",
 Buffer ()
 {
