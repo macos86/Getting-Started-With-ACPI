@@ -24,35 +24,13 @@ module.exports = {
     ],
     base: '/Getting-Started-With-ACPI/',
 
-	watch: {
-	    $page(newPage, oldPage) {
-	      if (newPage.key !== oldPage.key) {
-	        requestAnimationFrame(() => {
-	          if (this.$route.hash) {
-	            const element = document.getElementById(this.$route.hash.slice(1));
-
-	            if (element && element.scrollIntoView) {
-	              element.scrollIntoView();
-	            }
-	          }
-	        });
-	      }
-	    }
-	  },
-	
-	markdown: {
-		extendMarkdown: md => {
-			md.use(require('markdown-it-multimd-table'), {
-				rowspan: true,
-			});
-		}
-	},
-
-    /**
-     * Theme configuration, here is the default theme configuration for VuePress.
-     *
-     * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-     */
+    markdown: {
+        extendMarkdown: md => {
+            md.use(require('markdown-it-multimd-table'), {
+                rowspan: true,
+            });
+        }
+    },
     theme: 'vuepress-theme-succinct',
     globalUIComponents: [
         'ThemeManager'
@@ -60,70 +38,70 @@ module.exports = {
 
     themeConfig: {
         lastUpdated: true,
-        repo: 'https://github.com/dortania/Getting-Started-With-ACPI',
+        repo: 'https://github.com/macos86/Getting-Started-With-ACPI',
         editLinks: true,
-        editLinkText: 'Help us improve this page!',
+        editLinkText: 'Aiutaci a tradurre questa pagina!',
         logo: 'homepage.png',
         nav: [{
             text: 'Dortania Guides',
             ariaLabel: 'Language Menu',
             items: [{
-                text: 'Home Site',
+                text: 'Homepage (EN)',
                 link: 'https://dortania.github.io/'
             },
             {
-                text: 'OpenCore Install Guide',
-                link: 'https://dortania.github.io/OpenCore-Install-Guide/'
+                text: 'Guida Installazione OpenCore',
+                link: 'https://macos86.github.io/OpenCore-Install-Guide/'
             },
             {
-                text: 'OpenCore Post-Install',
+                text: 'OpenCore Post-Install (EN)',
                 link: 'https://dortania.github.io/OpenCore-Post-Install/'
             },
             {
-                text: 'Wireless Buyers Guide',
+                text: 'Wireless Buyers Guide (EN)',
                 link: 'https://dortania.github.io/Wireless-Buyers-Guide/'
             },
             {
-                text: 'GPU Buyers Guide',
+                text: 'GPU Buyers Guide (EN)',
                 link: 'https://dortania.github.io/GPU-Buyers-Guide/'
             },
             {
-                text: 'Anti Buyers Guide',
+                text: 'Anti Buyers Guide (EN)',
                 link: 'https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/'
             },
             ]
         },
         ],
         sidebar: [{
-            title: 'Introduction',
+            title: 'Introduzione',
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['', 'Getting Started With ACPI'],
-				['ssdt-platform', 'Choosing the SSDTs'],
+                ['', 'Iniziamo con ACPI'],
+                ['ssdt-platform', 'Scegliere gli SSDT'],
             ]
 
         },
         {
-            title: 'Methods',
+            title: 'Metodi',
             collapsable: false,
             sidebarDepth: 2,
             children: [
                 '/ssdt-methods/ssdt-methods',
-		        {
-		            title: 'Methods',
-		            collapsable: false,
-		            sidebarDepth: 2,
-		            children: [
-		                '/ssdt-methods/ssdt-prebuilt',
-						'/ssdt-methods/ssdt-easy',
-						'/ssdt-methods/ssdt-long',
-		            ]
-		        },
+                {
+                    title: 'Metodi',
+                    collapsable: false,
+                    sidebarDepth: 2,
+                    children: [
+                        '/ssdt-methods/ssdt-prebuilt',
+                        '/ssdt-methods/ssdt-easy',
+                        '/ssdt-methods/ssdt-long',
+                    ]
+                },
             ]
         },
         {
-            title: 'Manual',
+            title: 'Manuale',
             collapsable: false,
             sidebarDepth: 1,
             children: [
@@ -136,7 +114,7 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['/Desktops/desktop-disable', 'Disabling desktop dGPUs'],
+                ['/Desktops/desktop-disable', 'Disabilitare le dGPU nei desktop'],
             ]
         },
         {
@@ -144,148 +122,144 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                ['/Laptops/backlight', 'Fixing Backlight'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Laptops/backlight-methods/prebuilt', 'Prebuilt'],
-		                ['/Laptops/backlight-methods/manual', 'Manual'],
-		            ]
-		        },
-                ['/Laptops/trackpad', 'Fixing Trackpad'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Laptops/trackpad-methods/prebuilt', 'Prebuilt'],
-		                ['/Laptops/trackpad-methods/manual', 'Manual'],
-		            ]
-		        },
-				['/Laptops/laptop-disable', 'Disabling laptop dGPUs'],
+                ['/Laptops/backlight', 'Risolvere Retroilluminazione'],
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Laptops/backlight-methods/prebuilt', 'Precompilato'],
+                        ['/Laptops/backlight-methods/manual', 'Manuale'],
+                    ]
+                },
+                ['/Laptops/trackpad', 'Risolvere Trackpad'],
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Laptops/trackpad-methods/prebuilt', 'Precompilato'],
+                        ['/Laptops/trackpad-methods/manual', 'Manuale'],
+                    ]
+                },
+                ['/Laptops/laptop-disable', 'Disabilitare le dGPU dei Laptop'],
             ]
         },
         {
-            title: 'Universal',
+            title: 'Universali',
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                ['/Universal/ec-fix', 'Embedded Controller'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Universal/ec-methods/prebuilt', 'Prebuilt'],
-						['/Universal/ec-methods/ssdttime', 'SSDTTime'],
-		                ['/Universal/ec-methods/manual', 'Manual'],
-		            ]
-		        },
-                ['/Universal/plug', 'CPU Power Management'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Universal/plug-methods/prebuilt', 'Prebuilt'],
-						['/Universal/plug-methods/ssdttime', 'SSDTTime'],
-		                ['/Universal/plug-methods/manual', 'Manual'],
-		            ]
-		        },
+                ['/Universal/ec-fix', 'Controller Integrato'],
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/ec-methods/prebuilt', 'Precompilato'],
+                        ['/Universal/ec-methods/ssdttime', 'SSDTTime'],
+                        ['/Universal/ec-methods/manual', 'Manuale'],
+                    ]
+                },
+                ['/Universal/plug', 'Gestione Energia CPU'],
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/plug-methods/prebuilt', 'Precompilato'],
+                        ['/Universal/plug-methods/ssdttime', 'SSDTTime'],
+                        ['/Universal/plug-methods/manual', 'Manuale'],
+                    ]
+                },
                 ['/Universal/awac', 'AWAC vs RTC'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Universal/awac-methods/prebuilt', 'Prebuilt'],
-		                ['/Universal/awac-methods/ssdttime', 'SSDTTime'],
-		                ['/Universal/awac-methods/manual', 'Manual'],
-						['/Universal/awac-methods/manual-hedt', 'Manual HEDT'],
-		            ]
-		        },
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/awac-methods/prebuilt', 'Precompilato'],
+                        ['/Universal/awac-methods/ssdttime', 'SSDTTime'],
+                        ['/Universal/awac-methods/manual', 'Manuale'],
+                        ['/Universal/awac-methods/manual-hedt', 'Manuale per HEDT'],
+                    ]
+                },
                 ['/Universal/nvram', 'NVRAM PMC'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Universal/nvram-methods/prebuilt', 'Prebuilt'],
-		                ['/Universal/nvram-methods/ssdttime', 'SSDTTime'],
-		                ['/Universal/nvram-methods/manual', 'Manual'],
-		            ]
-		        },
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/nvram-methods/prebuilt', 'Precompilato'],
+                        ['/Universal/nvram-methods/ssdttime', 'SSDTTime'],
+                        ['/Universal/nvram-methods/manual', 'Manuale'],
+                    ]
+                },
                 ['/Universal/rhub', 'USB RHUB'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Universal/rhub-methods/prebuilt', 'Prebuilt'],
-						['/Universal/rhub-methods/ssdttime', 'SSDTTime'],
-		                ['/Universal/rhub-methods/manual', 'Manual'],
-		            ]
-		        },
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/rhub-methods/prebuilt', 'Precompilato'],
+                        ['/Universal/rhub-methods/ssdttime', 'SSDTTime'],
+                        ['/Universal/rhub-methods/manual', 'Manuale'],
+                    ]
+                },
                 ['/Universal/imei', 'IMEI'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Universal/imei-methods/prebuilt', 'Prebuilt'],
-		                ['/Universal/imei-methods/manual', 'Manual'],
-		            ]
-		        },
-                ['/Universal/unc0', 'Fixing Uncore Bridge'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-						['/Universal/unc0-methods/prebuilt', 'Prebuilt'],
-		                ['/Universal/unc0-methods/manual', 'Manual'],
-		            ]
-		        },
-                ['/Universal/smbus', 'Fixing SMBus Support'],
-		        {
-					title: 'Methods',
-		            collapsable: true,
-		            sidebarDepth: 2,
-		            children: [
-		                ['/Universal/smbus-methods/manual', 'Manual'],
-		            ]
-		        },
-                ['/Universal/irq', 'IRQ Fix'],
-				['/Universal/spoof', 'GPU Spoof'],
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/imei-methods/prebuilt', 'Precompilato'],
+                        ['/Universal/imei-methods/manual', 'Manuale'],
+                    ]
+                },
+                ['/Universal/unc0', 'Risolvere Brigde Uncore'],
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/unc0-methods/prebuilt', 'Precompilato'],
+                        ['/Universal/unc0-methods/manual', 'Manuale'],
+                    ]
+                },
+                ['/Universal/smbus', 'Risolvere il Supporto SMBus'],
+                {
+                    title: 'Metodi',
+                    collapsable: true,
+                    sidebarDepth: 2,
+                    children: [
+                        ['/Universal/smbus-methods/manual', 'Manuale'],
+                    ]
+                },
+                ['/Universal/irq', 'Fix di IRQ'],
+                ['/Universal/spoof', 'Spoof della GPU'],
             ]
         },
         {
-            title: 'Cleanup',
+            title: 'Pulizia',
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['cleanup', 'Cleanup'],
+                ['cleanup', 'Pulizia'],
             ]
         },
         {
-            title: 'Misc',
+            title: 'Altro',
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['troubleshooting', 'Troubleshooting'],
-				['CONTRIBUTING', 'Contributing'],
+                ['troubleshooting', 'Risoluzione dei Problemi'],
+                ['CONTRIBUTING', 'Contribuire'],
             ]
         },
-    	],
+        ],
     },
-    /**
-     * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-     */
     plugins: [
-        '@vuepress/plugin-back-to-top',
-        'vuepress-plugin-smooth-scroll',
+        '@vuepress/back-to-top',
         ['vuepress-plugin-medium-zoom',
             {
                 selector: "img",
