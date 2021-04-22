@@ -17,7 +17,7 @@ Perciò, cosa sono gli DSDT/SSDT? Beh, queste tabelle presenti nel tuo firmware 
 Un DSDT (Differentiated System Description Table) può essere l'insieme di una serie di informazioni passate tramite gli SSDT (Secondary System Description Table).
 Puoi pensare che il DSDT sia l'insieme degli SSDT con ulteriori dettagli riguardo al progetto
 
-Puoi leggere maggiori informazioni riguardo alle specifiche ACPI qui: [ACPI 6.3 Manual (En)](https://uefi.org/sites/default/files/resources/ACPI_6_3_May16.pdf)
+Puoi leggere maggiori informazioni riguardo alle specifiche ACPI qui: [Manuale ACPI 6.4 (En)](https://uefi.org/sites/default/files/resources/ACPI_Spec_6_4_Jan22.pdf)
 
 > Perciò, perché ci importano queste tabelle?
 
