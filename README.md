@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: acpi-logo.png
+heroImage: icons/apple-touch-icon-precomposed-152.png
 heroText: Iniziamo con gli ACPI by Dortania
 actionText: Iniziamo→
 actionLink: ssdt-platform.md
@@ -42,7 +42,3 @@ I principali dispositivi che richiedono la correzione per funzionare correttamen
 * SSDT IRQ e patch ACPI
   * Necessarie per sistemare i conflitti IRQ con DSDT, principalmente per laptop. Esclusivo di SSDTTime
   * Nota che Skylake e sistemi più recenti hanno raramente conflitti IRQ, importante principalmente in Broadwell e meno recenti
-
-Ora vai alla prossima pagina riguardo a quali SSDT necessita il tuo sistema:
-
-## [Scegliere i tuoi SSDT](ssdt-platform.md)
