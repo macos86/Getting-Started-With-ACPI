@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: icons/apple-touch-icon-precomposed-152.png
+heroImage: /icons/apple-touch-icon-precomposed-152.png
 heroText: Iniziamo con gli ACPI by Dortania
 actionText: Iniziamo→
 actionLink: ssdt-platform.md
