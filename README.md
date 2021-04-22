@@ -1,36 +1,48 @@
-# Getting started with ACPI
+---
+home: true
+heroImage: icons/apple-touch-icon-precomposed-152.png
+heroText: Iniziamo con gli ACPI by Dortania
+actionText: Iniziamo→
+actionLink: ssdt-platform.md
+meta:
+- name: description
+  content: Versione attualmente supportata 0.6.8
+---
 
-<img src="acpi-logo.png" width="512">
+# Iniziamo con ACPI
 
-## A quick explainer on ACPI
+## Una spiegazione rapida sugli ACPI
 
-So what are DSDTs and SSDTs? Well, these are tables present in your firmware that outline hardware devices like USB controllers, CPU threads, embedded controllers, system clocks and such. A DSDT(Differentiated System Description Table) can be seen as the body holding most of the info with smaller bits of info being passed by the SSDT(Secondary System Description Table). You can think of the DSDT as the building blueprints with SSDTs being sticky notes outlining extra details to the project
+Perciò, cosa sono gli DSDT/SSDT? Beh, queste tabelle presenti nel tuo firmware aggiungono dispositivi come controller USB, thread della CPU, controller integrato, orologio di sistema e altro.
+Un DSDT (Differentiated System Description Table) può essere l'insieme di una serie di informazioni passate tramite gli SSDT (Secondary System Description Table).
+Puoi pensare che il DSDT sia l'insieme degli SSDT con ulteriori dettagli riguardo al progetto
 
-You can read more about ACPI and it's spec here: [ACPI 6.3 Manual](https://uefi.org/sites/default/files/resources/ACPI_6_3_May16.pdf)
+Puoi leggere maggiori informazioni riguardo alle specifiche ACPI qui: [ACPI 6.3 Manual (En)](https://uefi.org/sites/default/files/resources/ACPI_6_3_May16.pdf)
 
-> So why do we care about these tables?
+> Perciò, perché ci importano queste tabelle?
 
-macOS can be very picky about the devices present in the DSDT and so our job is to correct it. The main devices that need to be corrected for macOS to work properly:
+macOS può essere testardo riguardo ai dispositivi presenti nel tuo DSDT e dovremmo correggerlo.
+I principali dispositivi che richiedono la correzione per funzionare correttamente:
 
-* Embedded controllers(EC)
-  * All semi-modern Intel machines have an EC (usually called H\_EC, ECDV, EC0, etc...) exposed in their DSDT, with many AMD systems also having it exposed. These controllers are generally not compatible with macOS and can cause panics, so then need to be hidden from macOS. macOS Catalina requires a device named `EC` to be present though, so a dummy EC is created.
-  * With laptops, the actual embedded controller still needs to be enabled for battery and hotkeys to work, and renaming the EC can additionally cause issues with windows, so creating a fake EC without disabling the real embedded controller is preferable.
+* Controller Integrati abbreviazione EC, da Embedded controller
+  * Tutte le macchine moderne o meno con processore Intel hanno un EC (chiamato usualmente H\_EC, ECDV, EC0, ecc...) esposto nel loro DSDT, e anche la maggior parte dei sistemi AMD ce l'hanno esposto. Questi controller generalmente non sono compatibili con macOS e causano i panic, perciò vanno nascosti da macOS. macOS Catalina richiede un dispositivo con il nome `EC`, perciò nei casi limite creeremo un EC fantoccio.
+  * Nei laptop, il controller integrato deve ancora essere abilitato per far funzionare batteria e tasti chiave, e rinominare l'EC può causare ulteriori problemi su Windows, perciò creeremo un finto EC senza disabilitare quello reale.
 * Plugin type
-  * This allows the use of XCPM providing native CPU power management on **Intel** Haswell and newer CPUs, the SSDT will connect to the first thread of the CPU. Not meant for AMD
-* AWAC system clock.
-  * This applies to all 300 series motherboards including many Z370 boards, the specific issue is that newer boards ship with AWAC clock enabled. This is a problem because macOS cannot communicate with AWAC clocks, so this requires us to either force on the legacy RTC clock or if unavailable create a fake one for macOS to play with
-* NVRAM SSDT
-  * True 300 series motherboards(non-Z370) don't declare the FW chip as MMIO in ACPI and so the kernel ignores the MMIO region declared by the UEFI memory map. This SSDT brings back NVRAM support
-* Backlight SSDT
-  * Used for fixing backlight control support on laptops
-* GPIO SSDT
-  * Used for creating a stub to allow VoodooI2C to connect onto, for laptops only
-* XOSI SSDT
-  * Used for rerouting OSI calls to this SSDT, mainly used for tricking our hardware into thinking its booting Windows so we get better trackpad support. This is a very hacky solution known for breaking Windows boot, use the GPIO SSDT instead. Usage of XOSI will not be covered in this guide
-* IRQ SSDT and ACPI patches
-  * Needed for fixing IRQ conflicts within the DSDT, for laptops mainly. SSDTTime exclusive
-  * Note Skylake and newer systems rarely have IRQ conflicts, this is mainly prevalent on Broadwell and older
+  * Questo ci permette di usare XCPM che provvede una gestione dell'energia nativa per la CPU su **Intel** Haswell e CPU più recenti, questo SSDT si connetterà alla prima thread della CPU. Non riguarda AMD
+* Orologio di sistema AWAC.
+  * Si applica a tutte le schede madri della serie 300 incluse molte schede Z370, questi problemi specifici derivano dal nuovo orologio AWAC incluso in queste schede. Questo è un problema perché macOS non riesce a comunicare con gli orologi AWAC, perciò dobbiamo forzare l'utilizzo del vecchio orologio RTC o se non utilizzabile crearne uno per far giocare macOS
+* SSDT per la NVRAM
+  * Le vere schede madri della serie 300 (non Z370) non dichiarano il chip FW come MMIO in ACPI e perciò il kernel ignora la regione MMIO dichiarata nella mappa della memoria UEFI. Questo SSDT fa ritornare il supporto NVRAM
+* SSDT per la retroilluminazione
+  * Usato per sistemare il controllo della luminosità nei laptop
+* SSDT GPIO
+  * Usato per creare uno stub per far funzionare VoodooI2C, solo per laptop
+* SSDT XOSI
+  * Usato per reinstradare la chiamata OSI a questo SSDT, usata principalmente per ingannare il dispositivo e per farlo pensare di star avviando Windows per avere un maggiore supporto del trackpad. Questa è una soluzione da hacker, che può disturbare l'avvio di Windows, usa SSDT GPIO. L'uso di XOSI non sarà descritto in questa guida
+* SSDT IRQ e patch ACPI
+  * Necessarie per sistemare i conflitti IRQ con DSDT, principalmente per laptop. Esclusivo di SSDTTime
+  * Nota che Skylake e sistemi più recenti hanno raramente conflitti IRQ, importante principalmente in Broadwell e meno recenti
 
-Now head to the next page on what SSDTs do your systems need:
+Ora vai alla prossima pagina riguardo a quali SSDT necessita il tuo sistema:
 
-## [Choosing the SSDTs](ssdt-platform.md)
+## [Scegliere i tuoi SSDT](ssdt-platform.md)
