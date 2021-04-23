@@ -18,7 +18,7 @@ jobs:
         run: npm install
       - name: Lint
         run: npm run fixlint
-        if: ${{conclusion == 'success' || 'failure'}}
+        if: ${{steps.Install.conclusion == 'success' || 'failure'}}
       - name: Build
         run: npm run build
       - name: Deploy
