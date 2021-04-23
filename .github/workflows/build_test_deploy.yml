@@ -18,9 +18,9 @@ jobs:
         run: npm install
       - name: Lint
         run: npm run fixlint
-        if: ${{steps.Install.conclusion == 'success' || 'failure'}}
       - name: Build
         run: npm run build
+        if: ${{steps.Install.conclusion == 'success' || 'failure'}}
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master'}}
