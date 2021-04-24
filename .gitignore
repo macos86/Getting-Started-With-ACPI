@@ -2,5 +2,7 @@ _book/
 node_modules/
 .vscode/
 .DS_Store
+.vuepress/dist
+.vuepress/.config.js.swp
 yarn.lock
-**/*.swp
+yarn-error.log

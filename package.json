@@ -1,6 +1,5 @@
 {
    "name": "Getting-Started-With-ACPI",
-   "version": "0.0.0",
    "author": {
       "name": "Dortania",
       "url": "https://github.com/dortania"
@@ -17,14 +16,14 @@
    "license": "CC-BY-NC-SA-4.0",
    "devDependencies": {
       "@vuepress/plugin-back-to-top": "^1.8.2",
+      "@vuepress/plugin-medium-zoom": "^1.8.2",
       "markdown-it-multimd-table": "^4.1.0",
       "markdownlint-cli2": "^0.1.3",
       "vuepress": "^1.8.2",
-      "vuepress-plugin-medium-zoom": "^1.1.9",
       "vuepress-theme-book": "0.0.5",
       "vuepress-theme-dark-new": "^0.1.2",
       "vuepress-theme-succinct": "^1.7.1",
       "vuepress-theme-yuu": "^3.0.1"
    },
-   "homepage": "https://dortania.github.io/Getting-Started-With-ACPI/"
+   "homepage": "https://macos86.github.io/Getting-Started-With-ACPI/"
 }

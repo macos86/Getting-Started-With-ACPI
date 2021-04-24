@@ -1,61 +1,66 @@
-# Supporting the guides
+# Supportare la guida
 
-**Note**: This is a community run guide which is not officially endorsed by Acidanthera. Please do not bug Acidanthera with issues about this guide.
+**Nota**: Questa comunità usa una guida non ufficialmente gestita da Acidanthera. Per favore non segnalare issue riguardo a questa guida ad Acidanthera.
 
-Want to help support the guide? Well there's some ways you can help!
+Vuoi aiutare supportando la guida? Bene ci sono molte modi in cui puoi aiutare!
 
 [[toc]]
 
-Note: For those wanting to contribute financially, we seriously appreciate it but we're a non-profit organization. We do this to teach, not to make money. If you have some money left over we highly recommend donating it to a charity. [Crohn's and Colitis Canada](https://crohnsandcolitis.donorportal.ca/Donation/DonationDetails.aspx?L=en-CA&G=159&F=1097&T=GENER) is one we recommend if you have none on mind.
+Nota: Per chi vuole contribuire economicamente, veramente lo apprezziamo ma siamo un'organizzazione non-profit. Lo facciamo per insegnare, non per fare soldi. Se hai alcuni soldi rimasti, ti raccomandiamo altamente di donarli in carità. [Crohn's and Colitis Canada](https://crohnsandcolitis.donorportal.ca/Donation/DonationDetails.aspx?L=en-CA&G=159&F=1097&T=GENER) è ciò che raccomandiamo se non ne hai nessuno in mente.
 
-## Contributing via Issues
+## Contribuire via Issue
 
- Contributing via Issues is pretty simple but there are some rules:
+Contribuire via Issue è piuttosto semplice ma qui ecco alcune regole:
 
-* Keep issues tab dedicated to guides issues only, **no personal hackintosh issues**. It is not a place to discuss installation issues.
-* If for a typo or better clarification, please indicate what page it was on. Would appreciate not going for a scavenger hunt on where these issues are.
+* La zona issue è dedicata solo ai problemi della guida, **nessun issue del proprio hackintosh**. Non è un posto dove discutere i problemi di installazione.
+* Se è per un errore di trascrizione oppure un chiarimento, per favore indica in quale pagina sia. Lo apprezzeremmo per non andare noi a esplorare in quale pagina possa essere.
 
-You can find the issues tab here: [Getting Started With ACPI Issues](https://github.com/dortania/Getting-Started-With-ACPI/issues)
+Puoi trovare il bugtracker qui: [Bugtracker](https://github.com/dortania/bugtracker)
 
-## Contributing via PRs
+## Contribuire via PR
 
-Some guidelines when contributing via PRs:
+Alcune linee guida quando contribuisci tramite PR:
 
-* Use your brain (please).
-* Proofread your submissions.
-* Pull Requests can be denied if we feel it does not fit or has inaccurate information. We will generally tell you why it is rejected though or ask for revisions.
-  * We would also appreciate sources for any bigger commits to make it easier on us to verify the info your provide is valid
-* Images must be hosted locally in the repo under the `/images/` folder
-* Your PR must be run through a markdown lint and have all issues fixed.
-* In general, try to avoid using "non-Acidanthera" tools when possible. Generally we want to avoid use of third-party tools  - though if it's impossible otherwise, then you can link it.
-  * Tools explicitly banned:
-    * UniBeast, MultiBeast and KextBeast
-      * More info can be found here: [Tonymacx86-stance](https://github.com/khronokernel/Tonymcx86-stance)
+* Usa il tuo cervello (per favore).
+* Dimostra le tue affermazioni.
+* Le Pull Request possono essere rifiutate se non corrispondono o hanno informazioni inaccurate. Generalmente motiveremo perché viene rifiutata o perché viene richiesta una revisione.
+  * Apprezziamo le fonti per qualsiasi grande proposta, per rendere più semplice la verifica della attendibilità delle tue affermazioni
+* Le immagini devono essere scaricate localmente nella repository dentro la cartella `../images/`
+* La tua PR deve aver superato un markdown lint e aver sistemato tutti i problemi.
+* In generale, evitare quando possibile di usare strumenti "non-Acidanthera". Generalmente vogliamo evitare di usare qualsiasi strumento di terze parti - tranne quando è impossibile, quindi aggiungi il link a questo.
+  * Tool esplicitamente banditi:
+    * UniBeast, MultiBeast e KextBeast
+      * Più informazioni possono essere trovate qui: [Tonymacx86-stance (EN)](https://github.com/khronokernel/Tonymcx86-stance)
     * TransMac
-      * Known for creating borked USB drives
-    * Niresh Installers
-      * We'd like to avoid piracy with the guides
+      * Famoso per creare dischi USB rotti
+    * Installer Niresh
+      * Vorremmo evitare la pirateria in queste guide
 
-### How to Contribute
+### Come contribuire
 
-Best way to test your commits and make sure they are formatted correctly is downloading `nodejs` and `yarn` then getting the VuePress and [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) tools. When you run `yarn dev`, it will set up a local webserver which you can connect to view the changes you made. `markdownlint *` will throw any errors at you about formatting as well, and `markdownlint -f *` will attempt to fix these.
+Il miglior modo di testare i tuoi commit ed essere sicuro che siano formattati correttamente è di scaricare Node.js dopo usare il comando `npm install` per installare le dipendenze. Quando scrivi `npm run dev`, imposterà un server web locale in cui puoi connetterti per vedere le modifiche fatte. `npm test` troverà ogni errore riguardo alla formattazione e anche nello spellcheck. Se vuoi fare il `markdownlint` per sistemare automaticamente gli errori di lint, usa `npm run fix-lint`.
 
-* [Fork this repo](https://github.com/dortania/Getting-Started-With-ACPI/fork/)
-* Install the required tools:
-  * `brew install yarn`
-  * `npm install -g markdownlint-cli`
-* Make your changes.
-* Build the site:
-  * `yarn install` (To install all the required plugins)
-  * `yarn dev` (Preview the site)
-    * Can be found at `http://localhost:8080`
-* Check markdown format:
-  * `markdownlint -f *` (To fix any potential issues)
+Semplici step:
 
-### Tips
+* [Esegui un fork della repo](https://github.com/dortania/OpenCore-Install-Guide/fork/)
+* Installa i tool richiesti:
+  * [Node.js](https://nodejs.org/)
+* Esegui le tue modifiche.
+* Compila il sito:
+  * `npm install` (Per installare tutti i plugin richiesti)
+  * `npm run dev` (Crea un'anteprima del sito)
+    * La puoi trovare su `http://localhost:8080`
+* Controlla il lint e lo spellcheck:
+  * `npm test`
+  * `npm run lint` and `npm run spellcheck` (per avviare i test individualmente)
+  * `npm run fix-lint` (Per risolvere ogni tipo di errore)
+  * Per sistemare parole non riconosciute dallo spellcheck di default, per favore aggiungile al [dictionary.txt](./dictionary/dictionary.txt) e avvia `npm run sort-dict`
 
-Some tools that make contributing a bit easier:
+### Suggerimenti
 
-* [Typora](https://typora.io) for real time markdown rendering.
-* [TextMate](https://macromates.com) for easy and powerful mass find/replace.
-* [Github Desktop](https://desktop.github.com) for more user friendly GUI.
+Alcuni tool per fare in modo che contribuire sia più facile:
+
+* [Visual Studio Code](https://code.visualstudio.com)
+* [Typora](https://typora.io) per avere le modifiche al markdown in tempo reale.
+* [TextMate](https://macromates.com) per fare facilmente un massivo find/replace.
+* [Github Desktop](https://desktop.github.com) per avere una GUI più user friendly.
