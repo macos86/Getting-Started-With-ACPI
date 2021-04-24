@@ -29,37 +29,40 @@ module.exports = {
         lastUpdated: true,
         repo: 'https://github.com/macos86/Getting-Started-With-ACPI',
         editLinks: true,
+        smoothScroll: true,
         editLinkText: 'Aiutaci a tradurre questa pagina!',
         logo: 'homepage.png',
-        nav: [{
-            text: 'Dortania Guides',
-            ariaLabel: 'Language Menu',
-            items: [{
-                text: 'Homepage (EN)',
-                link: 'https://dortania.github.io/'
-            },
+        nav: [
             {
-                text: 'Guida Installazione OpenCore',
-                link: 'https://macos86.github.io/OpenCore-Install-Guide/'
+                text: 'Dortania Guides',
+                ariaLabel: 'Language Menu',
+                items: [
+                    {
+                        text: 'Homepage (EN)',
+                        link: 'https://dortania.github.io/'
+                    },
+                    {
+                        text: 'Guida Installazione OpenCore',
+                        link: 'https://macos86.github.io/OpenCore-Install-Guide/'
+                    },
+                    {
+                        text: 'OpenCore Post-Install (EN)',
+                        link: 'https://dortania.github.io/OpenCore-Post-Install/'
+                    },
+                    {
+                        text: 'Wireless Buyers Guide (EN)',
+                        link: 'https://dortania.github.io/Wireless-Buyers-Guide/'
+                    },
+                    {
+                        text: 'GPU Buyers Guide (EN)',
+                        link: 'https://dortania.github.io/GPU-Buyers-Guide/'
+                    },
+                    {
+                        text: 'Anti Buyers Guide (EN)',
+                        link: 'https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/'
+                    },
+                ]
             },
-            {
-                text: 'OpenCore Post-Install (EN)',
-                link: 'https://dortania.github.io/OpenCore-Post-Install/'
-            },
-            {
-                text: 'Wireless Buyers Guide (EN)',
-                link: 'https://dortania.github.io/Wireless-Buyers-Guide/'
-            },
-            {
-                text: 'GPU Buyers Guide (EN)',
-                link: 'https://dortania.github.io/GPU-Buyers-Guide/'
-            },
-            {
-                text: 'Anti Buyers Guide (EN)',
-                link: 'https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/'
-            },
-            ]
-        },
         ],
         sidebar: [{
             title: 'Scegliere gli SSDT',
