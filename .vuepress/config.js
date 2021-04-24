@@ -25,6 +25,14 @@ module.exports = {
     ],
     base: '/Getting-Started-With-ACPI/',
 
+    markdown: {
+		extendMarkdown: md => {
+			md.use(require('markdown-it-multimd-table'), {
+				rowspan: true,
+			});
+		}
+	},
+
     themeConfig: {
         lastUpdated: true,
         repo: 'https://github.com/macos86/Getting-Started-With-ACPI',
@@ -64,13 +72,7 @@ module.exports = {
                 ]
             },
         ],
-        markdown: {
-            extendMarkdown: md => {
-                md.use(require('markdown-it-multimd-table'), {
-                    rowspan: true,
-                });
-            }
-        },
+
         sidebar: [{
             title: 'Scegliere gli SSDT',
             collapsable: false,
