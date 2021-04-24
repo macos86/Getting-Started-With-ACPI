@@ -1,9 +1,3 @@
-/**
- * Custom Styles here.
- *
- * ref：https://v1.vuepress.vuejs.org/config/#index-styl
- */
-
 [data-theme='light']
  --sideBgColor $sideBgColor
 
@@ -25,7 +19,9 @@ div[class*="language-"]
     margin-top 0
 
 html {
-  overflow:   scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: unset;
 }
 ::-webkit-scrollbar {
     width 0px
