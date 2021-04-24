@@ -1,19 +1,19 @@
 # Supportare la guida
 
-**Nota**: Questa comunit‡ usa una guida non ufficialmente gestita da Acidanthera. Per favore non segnalare issue riguardo a questa guida ad Acidanthera.
+**Nota**: Questa comunit√† usa una guida non ufficialmente gestita da Acidanthera. Per favore non segnalare issue riguardo a questa guida ad Acidanthera.
 
 Vuoi aiutare supportando la guida? Bene ci sono molte modi in cui puoi aiutare!
 
 [[toc]]
 
-Nota: Per chi vuole contribuire economicamente, veramente lo apprezziamo ma siamo un'organizzazione non-profit. Lo facciamo per insegnare, non per fare soldi. Se hai alcuni soldi rimasti, ti raccomandiamo altamente di donarli in carit‡. [Crohn's and Colitis Canada](https://crohnsandcolitis.donorportal.ca/Donation/DonationDetails.aspx?L=en-CA&G=159&F=1097&T=GENER) Ë ciÚ che raccomandiamo se non ne hai nessuno in mente.
+Nota: Per chi vuole contribuire economicamente, veramente lo apprezziamo ma siamo un'organizzazione non-profit. Lo facciamo per insegnare, non per fare soldi. Se hai alcuni soldi rimasti, ti raccomandiamo altamente di donarli in carit√†. [Crohn's and Colitis Canada](https://crohnsandcolitis.donorportal.ca/Donation/DonationDetails.aspx?L=en-CA&G=159&F=1097&T=GENER) √® ci√≤ che raccomandiamo se non ne hai nessuno in mente.
 
 ## Contribuire via Issue
 
-Contribuire via Issue Ë piuttosto semplice ma qui ecco alcune regole:
+Contribuire via Issue √® piuttosto semplice ma qui ecco alcune regole:
 
-* La zona issue Ë dedicata solo ai problemi della guida, **nessun issue del proprio hackintosh**. Non Ë un posto dove discutere i problemi di installazione.
-* Se Ë per un errore di trascrizione oppure un chiarimento, per favore indica in quale pagina sia. Lo apprezzeremmo per non andare noi a esplorare in quale pagina possa essere.
+* La zona issue √® dedicata solo ai problemi della guida, **nessun issue del proprio hackintosh**. Non √® un posto dove discutere i problemi di installazione.
+* Se √® per un errore di trascrizione oppure un chiarimento, per favore indica in quale pagina sia. Lo apprezzeremmo per non andare noi a esplorare in quale pagina possa essere.
 
 Puoi trovare il bugtracker qui: [Bugtracker](https://github.com/dortania/bugtracker)
 
@@ -23,14 +23,14 @@ Alcune linee guida quando contribuisci tramite PR:
 
 * Usa il tuo cervello (per favore).
 * Dimostra le tue affermazioni.
-* Le Pull Request possono essere rifiutate se non corrispondono o hanno informazioni inaccurate. Generalmente motiveremo perchÈ viene rifiutata o perchÈ viene richiesta una revisione.
-  * Apprezziamo le fonti per qualsiasi grande proposta, per rendere pi˘ semplice la verifica della attendibilit‡ delle tue affermazioni
+* Le Pull Request possono essere rifiutate se non corrispondono o hanno informazioni inaccurate. Generalmente motiveremo perch√© viene rifiutata o perch√© viene richiesta una revisione.
+  * Apprezziamo le fonti per qualsiasi grande proposta, per rendere pi√π semplice la verifica della attendibilit√† delle tue affermazioni
 * Le immagini devono essere scaricate localmente nella repository dentro la cartella `../images/`
 * La tua PR deve aver superato un markdown lint e aver sistemato tutti i problemi.
-* In generale, evitare quando possibile di usare strumenti "non-Acidanthera". Generalmente vogliamo evitare di usare qualsiasi strumento di terze parti - tranne quando Ë impossibile, quindi aggiungi il link a questo.
+* In generale, evitare quando possibile di usare strumenti "non-Acidanthera". Generalmente vogliamo evitare di usare qualsiasi strumento di terze parti - tranne quando √® impossibile, quindi aggiungi il link a questo.
   * Tool esplicitamente banditi:
     * UniBeast, MultiBeast e KextBeast
-      * Pi˘ informazioni possono essere trovate qui: [Tonymacx86-stance (EN)](https://github.com/khronokernel/Tonymcx86-stance)
+      * Pi√π informazioni possono essere trovate qui: [Tonymacx86-stance (EN)](https://github.com/khronokernel/Tonymcx86-stance)
     * TransMac
       * Famoso per creare dischi USB rotti
     * Installer Niresh
@@ -38,7 +38,7 @@ Alcune linee guida quando contribuisci tramite PR:
 
 ### Come contribuire
 
-Il miglior modo di testare i tuoi commit ed essere sicuro che siano formattati correttamente Ë di scaricare Node.js dopo usare il comando `npm install` per installare le dipendenze. Quando scrivi `npm run dev`, imposter‡ un server web locale in cui puoi connetterti per vedere le modifiche fatte. `npm test` trover‡ ogni errore riguardo alla formattazione e anche nello spellcheck. Se vuoi fare il `markdownlint` per sistemare automaticamente gli errori di lint, usa `npm run fix-lint`.
+Il miglior modo di testare i tuoi commit ed essere sicuro che siano formattati correttamente √® di scaricare Node.js dopo usare il comando `npm install` per installare le dipendenze. Quando scrivi `npm run dev`, imposter√† un server web locale in cui puoi connetterti per vedere le modifiche fatte. `npm test` trover√† ogni errore riguardo alla formattazione e anche nello spellcheck. Se vuoi fare il `markdownlint` per sistemare automaticamente gli errori di lint, usa `npm run fix-lint`.
 
 Semplici step:
 
@@ -58,9 +58,9 @@ Semplici step:
 
 ### Suggerimenti
 
-Alcuni tool per fare in modo che contribuire sia pi˘ facile:
+Alcuni tool per fare in modo che contribuire sia pi√π facile:
 
 * [Visual Studio Code](https://code.visualstudio.com)
 * [Typora](https://typora.io) per avere le modifiche al markdown in tempo reale.
 * [TextMate](https://macromates.com) per fare facilmente un massivo find/replace.
-* [Github Desktop](https://desktop.github.com) per avere una GUI pi˘ user friendly.
+* [Github Desktop](https://desktop.github.com) per avere una GUI pi√π user friendly.
