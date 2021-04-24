@@ -24,11 +24,6 @@ module.exports = {
         ]
     ],
     base: '/Getting-Started-With-ACPI/',
-    
-    theme: 'vuepress-theme-succinct',
-    globalUIComponents: [
-        'ThemeManager'
-    ],
 
     themeConfig: {
         lastUpdated: true,
