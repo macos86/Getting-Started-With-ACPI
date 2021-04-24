@@ -90,15 +90,15 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 2,
             children: [
-                '/ssdt-methods/ssdt-methods',
+                'ssdt-methods',
                 {
                     title: 'Metodi',
                     collapsable: false,
                     sidebarDepth: 2,
                     children: [
-                        '/ssdt-methods/ssdt-prebuilt',
-                        '/ssdt-methods/ssdt-easy',
-                        '/ssdt-methods/ssdt-long',
+                        'ssdt-methods/ssdt-prebuilt',
+                        'ssdt-methods/ssdt-easy',
+                        'ssdt-methods/ssdt-long',
                     ]
                 },
             ]
@@ -108,8 +108,8 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                '/Manual/dump',
-                '/Manual/compile',
+                'Manual/dump',
+                'Manual/compile',
             ]
         },
         {
@@ -117,7 +117,7 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['/Desktops/desktop-disable', 'Disabilitare le dGPU nei desktop'],
+                ['Desktops/desktop-disable', 'Disabilitare le dGPU nei desktop'],
             ]
         },
         {
@@ -125,7 +125,7 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                ['/Laptops/backlight', 'Risolvere Retroilluminazione'],
+                ['Laptops/backlight', 'Risolvere Retroilluminazione'],
                 {
                     title: 'Metodi',
                     collapsable: true,
@@ -135,17 +135,17 @@ module.exports = {
                         ['/Laptops/backlight-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Laptops/trackpad', 'Risolvere Trackpad'],
+                ['Laptops/trackpad', 'Risolvere Trackpad'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Laptops/trackpad-methods/prebuilt', 'Precompilato'],
-                        ['/Laptops/trackpad-methods/manual', 'Manuale'],
+                        ['Laptops/trackpad-methods/prebuilt', 'Precompilato'],
+                        ['Laptops/trackpad-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Laptops/laptop-disable', 'Disabilitare le dGPU dei Laptop'],
+                ['Laptops/laptop-disable', 'Disabilitare le dGPU dei Laptop'],
             ]
         },
         {
@@ -153,93 +153,93 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                ['/Universal/ec-fix', 'Controller Integrato'],
+                ['Universal/ec-fix', 'Controller Integrato'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/ec-methods/prebuilt', 'Precompilato'],
-                        ['/Universal/ec-methods/ssdttime', 'SSDTTime'],
-                        ['/Universal/ec-methods/manual', 'Manuale'],
+                        ['Universal/ec-methods/prebuilt', 'Precompilato'],
+                        ['Universal/ec-methods/ssdttime', 'SSDTTime'],
+                        ['Universal/ec-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Universal/plug', 'Gestione Energia CPU'],
+                ['Universal/plug', 'Gestione Energia CPU'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/plug-methods/prebuilt', 'Precompilato'],
-                        ['/Universal/plug-methods/ssdttime', 'SSDTTime'],
-                        ['/Universal/plug-methods/manual', 'Manuale'],
+                        ['Universal/plug-methods/prebuilt', 'Precompilato'],
+                        ['Universal/plug-methods/ssdttime', 'SSDTTime'],
+                        ['Universal/plug-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Universal/awac', 'AWAC vs RTC'],
+                ['Universal/awac', 'AWAC vs RTC'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/awac-methods/prebuilt', 'Precompilato'],
-                        ['/Universal/awac-methods/ssdttime', 'SSDTTime'],
-                        ['/Universal/awac-methods/manual', 'Manuale'],
-                        ['/Universal/awac-methods/manual-hedt', 'Manuale per HEDT'],
+                        ['Universal/awac-methods/prebuilt', 'Precompilato'],
+                        ['Universal/awac-methods/ssdttime', 'SSDTTime'],
+                        ['Universal/awac-methods/manual', 'Manuale'],
+                        ['Universal/awac-methods/manual-hedt', 'Manuale per HEDT'],
                     ]
                 },
-                ['/Universal/nvram', 'NVRAM PMC'],
+                ['Universal/nvram', 'NVRAM PMC'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/nvram-methods/prebuilt', 'Precompilato'],
-                        ['/Universal/nvram-methods/ssdttime', 'SSDTTime'],
-                        ['/Universal/nvram-methods/manual', 'Manuale'],
+                        ['Universal/nvram-methods/prebuilt', 'Precompilato'],
+                        ['Universal/nvram-methods/ssdttime', 'SSDTTime'],
+                        ['Universal/nvram-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Universal/rhub', 'USB RHUB'],
+                ['Universal/rhub', 'USB RHUB'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/rhub-methods/prebuilt', 'Precompilato'],
-                        ['/Universal/rhub-methods/ssdttime', 'SSDTTime'],
-                        ['/Universal/rhub-methods/manual', 'Manuale'],
+                        ['Universal/rhub-methods/prebuilt', 'Precompilato'],
+                        ['Universal/rhub-methods/ssdttime', 'SSDTTime'],
+                        ['Universal/rhub-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Universal/imei', 'IMEI'],
+                ['Universal/imei', 'IMEI'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/imei-methods/prebuilt', 'Precompilato'],
-                        ['/Universal/imei-methods/manual', 'Manuale'],
+                        ['Universal/imei-methods/prebuilt', 'Precompilato'],
+                        ['Universal/imei-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Universal/unc0', 'Risolvere Brigde Uncore'],
+                ['Universal/unc0', 'Risolvere Brigde Uncore'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/unc0-methods/prebuilt', 'Precompilato'],
-                        ['/Universal/unc0-methods/manual', 'Manuale'],
+                        ['Universal/unc0-methods/prebuilt', 'Precompilato'],
+                        ['Universal/unc0-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Universal/smbus', 'Risolvere il Supporto SMBus'],
+                ['Universal/smbus', 'Risolvere il Supporto SMBus'],
                 {
                     title: 'Metodi',
                     collapsable: true,
                     sidebarDepth: 2,
                     children: [
-                        ['/Universal/smbus-methods/manual', 'Manuale'],
+                        ['Universal/smbus-methods/manual', 'Manuale'],
                     ]
                 },
-                ['/Universal/irq', 'Fix di IRQ'],
-                ['/Universal/spoof', 'Spoof della GPU'],
+                ['Universal/irq', 'Fix di IRQ'],
+                ['Universal/spoof', 'Spoof della GPU'],
             ]
         },
         {
