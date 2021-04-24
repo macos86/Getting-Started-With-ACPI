@@ -64,6 +64,13 @@ module.exports = {
                 ]
             },
         ],
+        markdown: {
+		extendMarkdown: md => {
+			md.use(require('markdown-it-multimd-table'), {
+				rowspan: true,
+			});
+		}
+	},
         sidebar: [{
             title: 'Scegliere gli SSDT',
             collapsable: false,
