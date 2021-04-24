@@ -17,7 +17,7 @@ To start, grab [SSDT-dGPU-Off.dsl](https://github.com/dortania/Getting-Started-W
 
 Next we need to get on Windows, and head to the following:
 
-```text
+```
 Device Manager -> Display Adapters -> dGPU -> Properties -> Details > BIOS device name
 ```
 
@@ -52,7 +52,7 @@ To start, grab [SSDT-NoHybGfx.dsl](https://github.com/dortania/Getting-Started-W
 
 Next we need to get on Windows, and head to the following:
 
-```text
+```
 Device Manager -> Display Adapters -> dGPU -> Properties -> Details > BIOS device name
 ```
 
@@ -72,12 +72,12 @@ External (_SB_.PCI0.PEG0.PEGP._PS3, MethodObj)    // dGPU ACPI Path
 If ((CondRefOf (\_SB.PCI0.PEG0.PEGP._DSM) && CondRefOf (\_SB.PCI0.PEG0.PEGP._PS3)))
 ```
 
-```text
+```
  // Card Off Request
  \_SB.PCI0.PEG0.PEGP._DSM (ToUUID ("a486d8f8-0bda-471b-a72b-6042a6b5bee0"), 0x0100, 0x1A, Buffer (0x04)
 ```
 
-```text
+```
  // Card Off
 \_SB.PCI0.PEG0.PEGP._PS3 ()
 ```

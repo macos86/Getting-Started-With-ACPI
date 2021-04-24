@@ -8,7 +8,7 @@ For this guide, we're gonna assume Windows is already on this laptop, as otherwi
 
 Now open DeviceManager, and head to the following:
 
-```text
+```
 Device Manager -> Display Adapters -> Properties -> Details > BIOS device name
 ```
 

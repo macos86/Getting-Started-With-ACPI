@@ -24,13 +24,13 @@ To find the PCI path of a GPU is fairly simple, best way to find it is running W
 
 The second "ACPI" is what we care about:
 
-```text
+```
 ACPI(_SB_)#ACPI(PC02)#ACPI(BR2A)#ACPI(PEGP)#PCI(0000)#PCI(0000)
 ```
 
 Now converting this to an ACPI path is quite simple, remove the `#ACPI` and `#PCI(0000)`:
 
-```text
+```
 `_SB_.PC02.BR2A.PEGP
 ```
 
