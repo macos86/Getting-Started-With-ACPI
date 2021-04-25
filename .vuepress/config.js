@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Getting Started With ACPI',
+    title: 'Iniziamo Con ACPI',
     head: [
         [
             'meta',
