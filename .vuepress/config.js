@@ -90,7 +90,7 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 2,
             children: [
-                'ssdt-methods',
+                'ssdt-methods/',
                 {
                     title: 'Metodi',
                     collapsable: false,
