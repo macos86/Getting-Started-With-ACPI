@@ -1,5 +1,6 @@
 module.exports = {
     title: 'Iniziamo Con ACPI',
+    lang: 'it-IT',
     head: [
         [
             'meta',
@@ -33,18 +34,15 @@ module.exports = {
 		}
 	},
     
-    theme: 'vuepress-theme-succinct',
-    globalUIComponents: [
-        'ThemeManager'
-    ],
+    theme: 'yuu',
 
     themeConfig: {
         lastUpdated: true,
-        repo: 'https://github.com/macos86/Getting-Started-With-ACPI',
+        repo: 'macos86/Getting-Started-With-ACPI',
         editLinks: true,
         smoothScroll: true,
         editLinkText: 'Aiutaci a tradurre questa pagina!',
-        logo: 'homepage.png',
+        logo: '.vuepress/public/homepage.png',
         nav: [
             {
                 text: 'Dortania Guides',
@@ -263,12 +261,6 @@ module.exports = {
     },
     plugins: [
         '@vuepress/back-to-top',
-        ['vuepress-plugin-medium-zoom',
-        {
-            selector: "img",
-            options: {
-                background: 'var(--bodyBgColor)'
-            }
-        }],
+        '@vuepress/medium-zoom'
     ]
 }
