@@ -33,11 +33,9 @@ module.exports = {
 			});
 		}
 	},
-    
-    theme: 'yuu',
 
     themeConfig: {
-        lastUpdated: true,
+        lastUpdated: 'Ultimo Aggiornamento',
         repo: 'macos86/Getting-Started-With-ACPI',
         editLinks: true,
         smoothScroll: true,
