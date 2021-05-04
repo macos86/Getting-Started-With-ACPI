@@ -40,7 +40,6 @@ module.exports = {
         editLinks: true,
         smoothScroll: true,
         editLinkText: 'Aiutaci a tradurre questa pagina!',
-        logo: '.vuepress/public/homepage.png',
         nav: [
             {
                 text: 'Dortania Guides',
