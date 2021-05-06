@@ -150,7 +150,7 @@ module.exports = {
                         ['/Universal/ec/manual.md', 'Manuale'],
                     ]
                 },
-                ['/Universal/plug', 'Gestione Energia CPU'],
+                ['/Universal/plug/', 'Gestione Energia CPU'],
                 {
                     title: 'Metodi',
                     children: [
@@ -159,7 +159,7 @@ module.exports = {
                         ['/Universal/plug/manual.md', 'Manuale'],
                     ]
                 },
-                ['/Universal/awac', 'AWAC vs RTC'],
+                ['/Universal/awac/', 'AWAC vs RTC'],
                 {
                     title: 'Metodi',
                     children: [
@@ -169,7 +169,7 @@ module.exports = {
                         ['/Universal/awac/manual-hedt', 'Manuale per HEDT'],
                     ]
                 },
-                ['/Universal/nvram', 'NVRAM PMC'],
+                ['/Universal/nvram/', 'NVRAM PMC'],
                 {
                     title: 'Metodi',
                     children: [
@@ -178,7 +178,7 @@ module.exports = {
                         ['/Universal/nvram/manual.md', 'Manuale'],
                     ]
                 },
-                ['/Universal/rhub', 'USB RHUB'],
+                ['/Universal/rhub/', 'USB RHUB'],
                 {
                     title: 'Metodi',
                     children: [
@@ -187,7 +187,7 @@ module.exports = {
                         ['/Universal/rhub/manual.md', 'Manuale'],
                     ]
                 },
-                ['/Universal/imei', 'IMEI'],
+                ['/Universal/imei/', 'IMEI'],
                 {
                     title: 'Metodi',
                     children: [
@@ -195,7 +195,7 @@ module.exports = {
                         ['/Universal/imei/manual.md', 'Manuale'],
                     ]
                 },
-                ['/Universal/unc0', 'Risolvere Brigde Uncore'],
+                ['/Universal/unc0/', 'Risolvere Brigde Uncore'],
                 {
                     title: 'Metodi',
                     children: [
@@ -203,7 +203,7 @@ module.exports = {
                         ['/Universal/unc0/manual.md', 'Manuale'],
                     ]
                 },
-                ['/Universal/smbus', 'Risolvere il Supporto SMBus'],
+                ['/Universal/smbus/', 'Risolvere il Supporto SMBus'],
                 {
                     title: 'Metodi',
                     children: [
