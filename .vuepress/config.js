@@ -83,14 +83,14 @@ module.exports = {
             title: 'Metodi',
             collapsable: false,
             children: [
-                '/ssdt/',
+                '/ssdt-methods/',
                 {
                     title: 'Metodi',
                     collapsable: false,
                     children: [
-                        '/ssdt/ssdt-prebuilt.md',
-                        '/ssdt/ssdt-easy.md',
-                        '/ssdt/ssdt-long.md',
+                        '/ssdt-methods/ssdt-prebuilt.md',
+                        '/ssdt-methods/ssdt-easy.md',
+                        '/ssdt-methods/ssdt-long.md',
                     ]
                 },
             ]
