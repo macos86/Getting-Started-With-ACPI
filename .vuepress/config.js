@@ -27,12 +27,12 @@ module.exports = {
     base: '/Getting-Started-With-ACPI/',
 
     markdown: {
-		extendMarkdown: md => {
-			md.use(require('markdown-it-multimd-table'), {
-				rowspan: true,
-			});
-		}
-	},
+        extendMarkdown: md => {
+            md.use(require('markdown-it-multimd-table'), {
+                rowspan: true,
+            });
+        }
+    },
 
     themeConfig: {
         lastUpdated: 'Ultimo Aggiornamento',
@@ -75,25 +75,22 @@ module.exports = {
 
         sidebar: [{
             title: 'Scegliere gli SSDT',
-            collapsable: false,
             sidebarDepth: 1,
-            path: 'ssdt-platform'
+            path: '/ssdt-platform.md'
 
         },
         {
             title: 'Metodi',
             collapsable: false,
-            sidebarDepth: 2,
             children: [
-                'ssdt-methods/',
+                '/ssdt/',
                 {
                     title: 'Metodi',
                     collapsable: false,
-                    sidebarDepth: 2,
                     children: [
-                        'ssdt-methods/ssdt-prebuilt',
-                        'ssdt-methods/ssdt-easy',
-                        'ssdt-methods/ssdt-long',
+                        '/ssdt/ssdt-prebuilt.md',
+                        '/ssdt/ssdt-easy.md',
+                        '/ssdt/ssdt-long.md',
                     ]
                 },
             ]
@@ -103,8 +100,8 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                'Manual/dump',
-                'Manual/compile',
+                '/Manual/dump.md',
+                '/Manual/compile.md',
             ]
         },
         {
@@ -112,7 +109,7 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['Desktops/desktop-disable', 'Disabilitare le dGPU nei desktop'],
+                ['/Desktops/', 'Disabilitare le dGPU nei desktop'],
             ]
         },
         {
@@ -120,27 +117,23 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                ['Laptops/backlight', 'Risolvere Retroilluminazione'],
+                ['/Laptops/backlight/', 'Risolvere Retroilluminazione'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['/Laptops/backlight-methods/prebuilt', 'Precompilato'],
-                        ['/Laptops/backlight-methods/manual', 'Manuale'],
+                        ['/Laptops/backlight/prebuilt.md', 'Precompilato'],
+                        ['/Laptops/backlight/manual.md', 'Manuale'],
                     ]
                 },
-                ['Laptops/trackpad', 'Risolvere Trackpad'],
+                ['/Laptops/trackpad/', 'Risolvere Trackpad'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Laptops/trackpad-methods/prebuilt', 'Precompilato'],
-                        ['Laptops/trackpad-methods/manual', 'Manuale'],
+                        ['/Laptops/trackpad/prebuilt.md', 'Precompilato'],
+                        ['/Laptops/trackpad/manual.md', 'Manuale'],
                     ]
                 },
-                ['Laptops/laptop-disable', 'Disabilitare le dGPU dei Laptop'],
+                ['/Laptops/laptop-disable.md', 'Disabilitare le dGPU dei Laptop'],
             ]
         },
         {
@@ -148,93 +141,77 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                ['Universal/ec-fix', 'Controller Integrato'],
+                ['/Universal/ec/', 'Controller Integrato'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/ec-methods/prebuilt', 'Precompilato'],
-                        ['Universal/ec-methods/ssdttime', 'SSDTTime'],
-                        ['Universal/ec-methods/manual', 'Manuale'],
+                        ['/Universal/ec/prebuilt.md', 'Precompilato'],
+                        ['/Universal/ec/ssdttime.md', 'SSDTTime'],
+                        ['/Universal/ec/manual.md', 'Manuale'],
                     ]
                 },
-                ['Universal/plug', 'Gestione Energia CPU'],
+                ['/Universal/plug', 'Gestione Energia CPU'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/plug-methods/prebuilt', 'Precompilato'],
-                        ['Universal/plug-methods/ssdttime', 'SSDTTime'],
-                        ['Universal/plug-methods/manual', 'Manuale'],
+                        ['/Universal/plug/prebuilt.md', 'Precompilato'],
+                        ['/Universal/plug/ssdttime.md', 'SSDTTime'],
+                        ['/Universal/plug/manual.md', 'Manuale'],
                     ]
                 },
-                ['Universal/awac', 'AWAC vs RTC'],
+                ['/Universal/awac', 'AWAC vs RTC'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/awac-methods/prebuilt', 'Precompilato'],
-                        ['Universal/awac-methods/ssdttime', 'SSDTTime'],
-                        ['Universal/awac-methods/manual', 'Manuale'],
-                        ['Universal/awac-methods/manual-hedt', 'Manuale per HEDT'],
+                        ['/Universal/awac/prebuilt.md', 'Precompilato'],
+                        ['/Universal/awac/ssdttime.md', 'SSDTTime'],
+                        ['/Universal/awac/manual.md', 'Manuale'],
+                        ['/Universal/awac/manual-hedt', 'Manuale per HEDT'],
                     ]
                 },
-                ['Universal/nvram', 'NVRAM PMC'],
+                ['/Universal/nvram', 'NVRAM PMC'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/nvram-methods/prebuilt', 'Precompilato'],
-                        ['Universal/nvram-methods/ssdttime', 'SSDTTime'],
-                        ['Universal/nvram-methods/manual', 'Manuale'],
+                        ['/Universal/nvram/prebuilt.md', 'Precompilato'],
+                        ['/Universal/nvram/ssdttime.md', 'SSDTTime'],
+                        ['/Universal/nvram/manual.md', 'Manuale'],
                     ]
                 },
-                ['Universal/rhub', 'USB RHUB'],
+                ['/Universal/rhub', 'USB RHUB'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/rhub-methods/prebuilt', 'Precompilato'],
-                        ['Universal/rhub-methods/ssdttime', 'SSDTTime'],
-                        ['Universal/rhub-methods/manual', 'Manuale'],
+                        ['/Universal/rhub/prebuilt.md', 'Precompilato'],
+                        ['/Universal/rhub/ssdttime.md', 'SSDTTime'],
+                        ['/Universal/rhub/manual.md', 'Manuale'],
                     ]
                 },
-                ['Universal/imei', 'IMEI'],
+                ['/Universal/imei', 'IMEI'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/imei-methods/prebuilt', 'Precompilato'],
-                        ['Universal/imei-methods/manual', 'Manuale'],
+                        ['/Universal/imei/prebuilt.md', 'Precompilato'],
+                        ['/Universal/imei/manual.md', 'Manuale'],
                     ]
                 },
-                ['Universal/unc0', 'Risolvere Brigde Uncore'],
+                ['/Universal/unc0', 'Risolvere Brigde Uncore'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/unc0-methods/prebuilt', 'Precompilato'],
-                        ['Universal/unc0-methods/manual', 'Manuale'],
+                        ['/Universal/unc0/prebuilt.md', 'Precompilato'],
+                        ['/Universal/unc0/manual.md', 'Manuale'],
                     ]
                 },
-                ['Universal/smbus', 'Risolvere il Supporto SMBus'],
+                ['/Universal/smbus', 'Risolvere il Supporto SMBus'],
                 {
                     title: 'Metodi',
-                    collapsable: true,
-                    sidebarDepth: 2,
                     children: [
-                        ['Universal/smbus-methods/manual', 'Manuale'],
+                        ['/Universal/smbus/manual.md', 'Manuale'],
                     ]
                 },
-                ['Universal/irq', 'Fix di IRQ'],
-                ['Universal/spoof', 'Spoof della GPU'],
+                ['/Universal/irq.md', 'Fix di IRQ'],
+                ['/Universal/spoof.md', 'Spoof della GPU'],
             ]
         },
         {
@@ -242,7 +219,7 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['cleanup', 'Pulizia'],
+                ['/cleanup.md', 'Pulizia'],
             ]
         },
         {
@@ -250,8 +227,8 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['troubleshooting', 'Risoluzione dei Problemi'],
-                ['CONTRIBUTING', 'Contribuire'],
+                ['/troubleshooting.md', 'Risoluzione dei Problemi'],
+                ['/CONTRIBUTING.md', 'Contribuire'],
             ]
         },
         ],

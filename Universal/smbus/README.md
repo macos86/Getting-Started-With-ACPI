@@ -20,4 +20,4 @@ For install purposes, this SSDT isn't needed but for post-install it's recommend
 
 To make this SSDT, you only got 1 method: Doing it manually
 
-* [Manual](/Universal/smbus-methods/manual.md)
+* [Manual](./manual.md)

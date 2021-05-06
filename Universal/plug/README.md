@@ -12,6 +12,6 @@ The purpose of SSDT-PLUG is to allow the kernel's XCPM(XNU's CPU Power Managemen
 
 For SSDT-PLUG, there are 3 methods you can choose from:
 
-* [Prebuilt](/Universal/plug-methods/prebuilt.md)
-* [SSDTTime](/Universal/plug-methods/ssdttime.md)
-* [Manual](/Universal/plug-methods/manual.md)
+* [Prebuilt](./prebuilt.md)
+* [SSDTTime](./ssdttime.md)
+* [Manual](./manual.md)

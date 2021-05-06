@@ -18,6 +18,6 @@ This SSDT is required for all "true" 300 series motherboards(Z370 is excluded), 
 
 The main ways to make this SSDT:
 
-* [Prebuilt](/Universal/nvram-methods/prebuilt.md)
-* [SSDTTime](/Universal/nvram-methods/ssdttime.md)
-* [Manual](/Universal/nvram-methods/manual.md)
+* [Prebuilt](./prebuilt.md)
+* [SSDTTime](./ssdttime.md)
+* [Manual](./manual.md)

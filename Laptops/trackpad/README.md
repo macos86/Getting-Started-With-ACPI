@@ -12,5 +12,5 @@ With most modern laptop DSDTs, there's a variable called `GPEN` or `GPHD` which 
 
 For the trackpad fix, there are 2 methods you can choose from:
 
-* [Prebuilt](/Laptops/trackpad-methods/prebuilt.md)
-* [Manual](/Laptops/trackpad-methods/manual.md)
+* [Prebuilt](./prebuilt.md)
+* [Manual](./manual.md)

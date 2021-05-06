@@ -14,6 +14,6 @@ The purpose of SSDT-IMEI is:
 
 For the IMEI fix, there are 2 methods you can choose from:
 
-* [Prebuilt](/Universal/imei-methods/prebuilt.md)
+* [Prebuilt](./prebuilt.md)
   * The prebuilt are a bit bloated. It's recommended to use the method below.
-* [Manual](/Universal/imei-methods/manual.md)
+* [Manual](./manual.md)

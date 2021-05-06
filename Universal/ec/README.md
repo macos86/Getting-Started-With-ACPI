@@ -22,6 +22,6 @@ So TL;DR:
 
 For the EC fix, there are 3 methods you can choose from:
 
-* [Prebuilt](/Universal/ec-methods/prebuilt.md)
-* [SSDTTime](/Universal/ec-methods/ssdttime.md)
-* [Manual](/Universal/ec-methods/manual.md)
+* [Prebuilt](./prebuilt.md)
+* [SSDTTime](./ssdttime.md)
+* [Manual](./manual.md)

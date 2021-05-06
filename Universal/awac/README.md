@@ -25,10 +25,10 @@ SSDT-AWAC tries to re-enable the old RTC clock that is compatible with macOS, wh
 
 For the RTC fix, there are 3 methods you can choose from:
 
-* [Prebuilt](/Universal/awac-methods/prebuilt.md)
-* [SSDTTime](/Universal/awac-methods/ssdttime.md)
+* [Prebuilt](./prebuilt.md)
+* [SSDTTime](./ssdttime.md)
   * **Does not support HEDT**
-* [Manual](/Universal/awac-methods/manual.md)
+* [Manual](./manual.md)
   * For most users
-* [Manual HEDT](/Universal/awac-methods/manual-hedt.md)
+* [Manual HEDT](./manual-hedt.md)
   * For X99 and X299 users
