@@ -25,13 +25,11 @@ module.exports = {
         ]
     ],
     base: '/Getting-Started-With-ACPI/',
-
-    markdown: {
-        extendMarkdown: md => {
-            md.use(require('markdown-it-multimd-table'), {
-                rowspan: true,
-            });
-        }
+    
+    extendMarkdown: md => {
+        md.use(require('markdown-it-multimd-table'), {
+            rowspan: true,
+        });
     },
 
     themeConfig: {
