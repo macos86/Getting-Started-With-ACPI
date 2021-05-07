@@ -26,7 +26,7 @@ module.exports = {
     ],
     base: '/Getting-Started-With-ACPI/',
     
-    extendMarkdown: md => {
+    extendMarkdown: (md) => {
         md.use(require('markdown-it-multimd-table'), {
             rowspan: true,
         });
