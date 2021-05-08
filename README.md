@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: acpi-logo.png
+heroImage: images/acpi-logo.png
 heroText: Iniziamo con gli ACPI by Dortania
 actionText: Iniziamo→
 actionLink: ssdt-platform.md
