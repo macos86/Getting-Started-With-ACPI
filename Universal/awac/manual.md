@@ -27,7 +27,7 @@ And looks at that, we can in fact disable our AWAC and enable the RTC! If not sk
 
 Now it's as simple as grabbing [SSDT-AWAC.dsl](https://github.com/acidanthera/OpenCorePkg/tree/master/Docs/AcpiSamples/Source/SSDT-AWAC-DISABLE.dsl) and [compile](#compiling-the-ssdt), no changes needed You can also use the below SSDT to the same effect:
 
-* [SSDT-AWAC.aml](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
+* [SSDT-AWAC.aml](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
 
 ## RTC0 Method
 

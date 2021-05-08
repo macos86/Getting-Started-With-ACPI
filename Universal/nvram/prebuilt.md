@@ -2,7 +2,7 @@
 
 By far the easiest method, all you need to do is download the following file:
 
-* [SSDT-PMC.aml](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PMC.aml)
+* [SSDT-PMC.aml](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PMC.aml)
 
 Main things to note with this method:
 

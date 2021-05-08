@@ -17,7 +17,7 @@ Simply select your hardware type and generation, then download the associated fi
 
 ::: tip SSDTs required
 
-* [SSDT-EC-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
+* [SSDT-EC-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -37,8 +37,8 @@ SSDT-EC:
 
 ::: tip SSDTs required
 
-* [SSDT-EC-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
-* [SSDT-IMEI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI.aml)
+* [SSDT-EC-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
+* [SSDT-IMEI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI.aml)
   * Required for Sandy Bridge CPU with 7 series motherboard
     * ie. B75, Q75, Z75, H77, Q77, Z77
   * Required Ivy Bridge CPU with 6 series motherboard
@@ -69,8 +69,8 @@ SSDT-IMEI
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -94,8 +94,8 @@ SSDT-EC:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -120,10 +120,10 @@ SSDT-EC-USBX:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
-* [SSDT-AWAC](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
-* [SSDT-PMC](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PMC.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-AWAC](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
+* [SSDT-PMC](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PMC.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -158,10 +158,10 @@ SSDT-PMC:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
-* [SSDT-AWAC](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
-* [SSDT-RHUB](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RHUB.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-AWAC](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
+* [SSDT-RHUB](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RHUB.aml)
   * Specifically for Asus's 400 series motherboards, Gigabyte and others do not need SSDT-RHUB
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
@@ -198,9 +198,9 @@ SSDT-RHUB:
 
 ::: tip SSDTs required
 
-* [SSDT-EC-LAPTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
-* [SSDT-PNLF](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-EC-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
+* [SSDT-PNLF](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -229,14 +229,14 @@ SSDT-XOSI:
 
 ::: tip SSDTs required
 
-* [SSDT-EC-LAPTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
-* [SSDT-IMEI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI.aml)
+* [SSDT-EC-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
+* [SSDT-IMEI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI.aml)
   * Required for Sandy Bridge CPU with 7 series motherboard
     * ie. B75, Q75, Z75, H77, Q77, Z77
   * Required Ivy Bridge CPU with 6 series motherboard
     * ie. H61, B65, Q65, P67, H67, Q67, Z68
-* [SSDT-PNLF](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-PNLF](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -272,10 +272,10 @@ SSDT-XOSI:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-LAPTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
-* [SSDT-PNLF](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
+* [SSDT-PNLF](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -308,10 +308,10 @@ SSDT-XOSI:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-LAPTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
-* [SSDT-PNLF](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
+* [SSDT-PNLF](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -345,11 +345,11 @@ SSDT-XOSI:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-LAPTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
-* [SSDT-AWAC](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
-* [SSDT-PNLF-CFL](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF-CFL.aml)
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
+* [SSDT-AWAC](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
+* [SSDT-PNLF-CFL](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF-CFL.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -387,13 +387,13 @@ SSDT-XOSI:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-LAPTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
-* [SSDT-AWAC](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
-* [SSDT-PMC](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PMC.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
+* [SSDT-AWAC](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
+* [SSDT-PMC](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PMC.aml)
   * Only for 9th gen laptops, 10th gen can ignore
-* [SSDT-PNLF-CFL](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF-CFL.aml)
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-PNLF-CFL](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF-CFL.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -436,12 +436,12 @@ SSDT-XOSI:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-LAPTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
-* [SSDT-AWAC](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
-* [SSDT-RHUB](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RHUB.aml)
-* [SSDT-PNLF-CFL](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF-CFL.aml)
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
+* [SSDT-AWAC](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
+* [SSDT-RHUB](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RHUB.aml)
+* [SSDT-PNLF-CFL](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PNLF-CFL.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -486,7 +486,7 @@ SSDT-XOSI:
 
 ::: tip SSDTs required
 
-* [SSDT-EC-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
+* [SSDT-EC-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -506,8 +506,8 @@ SSDT-EC:
 
 ::: tip SSDTs required
 
-* [SSDT-EC-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
-* [SSDT-UNC0](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-UNC0.aml)
+* [SSDT-EC-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
+* [SSDT-UNC0](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-UNC0.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -531,10 +531,10 @@ SSDT-UNC0:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
-* [SSDT-RTC0-RANGE-HEDT](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RTC0-RANGE-HEDT.aml)
-* [SSDT-UNC0](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-UNC0.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-RTC0-RANGE-HEDT](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RTC0-RANGE-HEDT.aml)
+* [SSDT-UNC0](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-UNC0.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -568,9 +568,9 @@ SSDT-UNC0:
 
 ::: tip SSDTs required
 
-* [SSDT-PLUG-DRTNIA](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
-* [SSDT-RTC0-RANGE-HEDT](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RTC0-RANGE-HEDT.aml)
+* [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-PLUG-DRTNIA.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-RTC0-RANGE-HEDT](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RTC0-RANGE-HEDT.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -602,7 +602,7 @@ SSDT-RTC0-RANGE-HEDT:
 
 ::: tip SSDTs required
 
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
 
 Once downloaded, place them into your EFI folder under EFI/OC/ACPI and head back to the install guide
 
@@ -623,8 +623,8 @@ SSDT-EC-USBX:
 
 ::: tip SSDTs required
 
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
-* [SSDT-CPUR](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-CPUR.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-CPUR](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-CPUR.aml)
   * Only required for B550, A520 and newer
     * X570 and older **DO NOT** need SSDT-CPUR
     * No threadripper machines need this either

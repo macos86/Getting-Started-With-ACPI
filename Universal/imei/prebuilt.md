@@ -2,7 +2,7 @@
 
 By far the easiest method, all you need to do is download the following file:
 
-* [SSDT-IMEI.aml](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI.aml)
+* [SSDT-IMEI.aml](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI.aml)
 
 ## Wrapping up
 

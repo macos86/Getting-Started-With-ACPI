@@ -25,7 +25,7 @@ Now with the pathing, you can head here: [Edits to the sample SSDT](#edits-to-th
 
 Now that we have our ACPI path, lets grab our SSDT and get to work:
 
-* [SSDT-RHUB.dsl](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/decompiled/SSDT-RHUB.dsl)
+* [SSDT-RHUB.dsl](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/decompiled/SSDT-RHUB.dsl)
 
 By default, this uses `PCI0.XHC1.RHUB` for the pathing. you'll want to rename accordingly.
 

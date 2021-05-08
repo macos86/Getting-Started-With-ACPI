@@ -22,7 +22,7 @@ The rest of this page will however assume none of those 3 devices showed up.
 
 So there's actually no edits required to SSDT-IMEI, you can either grab the source code and compile yourself or use the prebuilt
 
-* [Prebuilt SSDT-IMEI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI-S.aml)
+* [Prebuilt SSDT-IMEI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-IMEI-S.aml)
 
 * [SSDT-IMEI's source code](https://github.com/acidanthera/OpenCorePkg/tree/master/Docs/AcpiSamples/Source/SSDT-IMEI.dsl)
 

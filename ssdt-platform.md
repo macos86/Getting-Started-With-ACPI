@@ -19,7 +19,7 @@ Per favore vedi la **tua specifica sezione ACPI per il tuo config.plist**, tutti
 | Coffee Lake | ^^ | ^^ | [SSDT-AWAC](./Universal/awac/) | [SSDT-PMC](./Universal/nvram/) | ^^ |
 | Comet Lake | ^^ | ^^ | ^^ | / | [SSDT-RHUB](./Universal/rhub/) |
 | AMD (15/16h) | / | ^^ | / | ^^ | / |
-| AMD (17h) | [SSDT-CPUR for B550 and A520](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-CPUR.aml) | ^^ | ^^ | ^^ | ^^ |
+| AMD (17h) | [SSDT-CPUR for B550 and A520](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-CPUR.aml) | ^^ | ^^ | ^^ | ^^ |
 
 ## Deskop di Alta Fascia
 

@@ -4,16 +4,16 @@ By far the easiest way to fix your Embedded Controller is just downloading one o
 
 **Desktop**:
 
-* [SSDT-EC-USBX-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+* [SSDT-EC-USBX-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
   * For Skylake desktops and newer and AMD CPU based systems
-* [SSDT-EC-DESKTOP](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
+* [SSDT-EC-DESKTOP](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-DESKTOP.aml)
   * For Broadwell desktops and older
 
 **Laptops**:
 
-* [SSDT-EC-USBX-LAPTOP.aml](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
+* [SSDT-EC-USBX-LAPTOP.aml](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml)
   * For Skylake laptops and newer
-* [SSDT-EC-LAPTOP.aml](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
+* [SSDT-EC-LAPTOP.aml](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-LAPTOP.aml)
   * For Broadwell laptops and older
 
 The main things to note with this method:

@@ -2,9 +2,9 @@
 
 By far the easiest method, all you need to do is download the following file:
 
-* [SSDT-AWAC.aml](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
+* [SSDT-AWAC.aml](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-AWAC.aml)
   * For most users
-* [SSDT-RTC0-RANGE-HEDT](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RTC0-RANGE-HEDT.aml)
+* [SSDT-RTC0-RANGE-HEDT](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RTC0-RANGE-HEDT.aml)
   * For Intel's X99 and X299 platforms
 
 Main things to note with this method:

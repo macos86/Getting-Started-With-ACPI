@@ -2,7 +2,7 @@
 
 This is a one-size fits all solution where we basically trick our hardware into thinking it's booting Windows. The problem with this method is that it's common to break Windows booting so avoid unless troubleshooting.
 
-* [SSDT-XOSI](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
+* [SSDT-XOSI](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-XOSI.aml)
 
 * XOSI Rename(add this under config.plist -> ACPI -> Patch):
 

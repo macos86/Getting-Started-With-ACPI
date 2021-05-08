@@ -38,7 +38,7 @@ With this example, we can see that we need both `SBRG` and `GPEN` to return `One
 
 Now that we have our ACPI path, lets grab our SSDT and get to work:
 
-* [SSDT-GPI0.dsl](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/decompiled/SSDT-GPI0.dsl)
+* [SSDT-GPI0.dsl](https://github.com/macos86/Getting-Started-With-ACPI/blob/master/extra-files/decompiled/SSDT-GPI0.dsl)
 
 From the second example, we'll want to set both GPEN and SBRG to `One` to allow it to operate in macOS:
 
