@@ -87,7 +87,7 @@ Device (_SB.PC00.SMBS.BUS0) <- Renamed
 
 ## Compiling the SSDT
 
- With the SSDT done, you're now [ready to compile the SSDT!](/Manual/compile.md)
+ With the SSDT done, you're now [ready to compile the SSDT!](/compile.md)
 
 ## Wrapping up
 

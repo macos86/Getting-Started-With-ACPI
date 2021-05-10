@@ -53,7 +53,7 @@ For the latter, you just need to replace the following files with [DEBUG version
 
 For the former, you can actually skip the ACPI section, return to the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/) and finish making the USB. Once booted to the picker, you can shut off the PC and check your USB:
 
-![](../images/Manual/dump-md/sysreport.png)
+![](../images/dump-md/sysreport.png)
 
 And voila! You have a DSDT! Now you can continue on with making SSDTs
 

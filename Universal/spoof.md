@@ -148,4 +148,4 @@ Buffer ()
 
 `"device-id"` will be set to our PCI ID that we found in "Finding a suitable PCI ID" and `"model"` is mainly cosmetic
 
-## [Now you're ready to compile the SSDT!](/Manual/compile.md)
+## [Now you're ready to compile the SSDT!](/compile.md)

@@ -11,7 +11,7 @@ To find the ACPI pathing, you have 2 methods:
 
 ### DSDT
 
-CPU naming is fairly easy to figure out, first open your decompiled DSDT you got from [Dumping the DSDT](/Manual/dump.md) and [Decompiling and Compiling](/Manual/compile.md) with either MaciASL(if in macOS) or any other text editor if in Windows or Linux(VSCode has an [ACPI extension](https://marketplace.visualstudio.com/items?itemName=Thog.vscode-asl) that can also help).
+CPU naming is fairly easy to figure out, first open your decompiled DSDT you got from [Dumping the DSDT](/dump.md) and [Decompiling and Compiling](/compile.md) with either MaciASL(if in macOS) or any other text editor if in Windows or Linux(VSCode has an [ACPI extension](https://marketplace.visualstudio.com/items?itemName=Thog.vscode-asl) that can also help).
 
 Next search for `Processor`. This should give you a result like this:
 
@@ -74,7 +74,7 @@ Original          |  Cleaned Up
 
 ## Compiling the SSDT
 
- With the SSDT done, you're now [ready to compile the SSDT!](/Manual/compile.md)
+ With the SSDT done, you're now [ready to compile the SSDT!](/compile.md)
 
 ## Wrapping up
 

@@ -6,7 +6,7 @@
 
 * **Note**: X99 and X299 see [here](../awac-methods/manual-hedt.md)
 
-Finding which SSDT you need is quite easy actually, first open your decompiled DSDT you got from [Dumping the DSDT](/Manual/dump.md) and [Decompiling and Compiling](/Manual/compile.md) with either MaciASL(if in macOS) or any other text editor if in Windows or Linux(VSCode has an [ACPI extension](https://marketplace.visualstudio.com/items?itemName=Thog.vscode-asl) that can also help).
+Finding which SSDT you need is quite easy actually, first open your decompiled DSDT you got from [Dumping the DSDT](/dump.md) and [Decompiling and Compiling](/compile.md) with either MaciASL(if in macOS) or any other text editor if in Windows or Linux(VSCode has an [ACPI extension](https://marketplace.visualstudio.com/items?itemName=Thog.vscode-asl) that can also help).
 
 Next search for `ACPI000E`. You should get something similar:
 
@@ -84,7 +84,7 @@ Scope (_SB.PCI0.LPC) <- Renamed
 
 ### Compiling the SSDT
 
- With the SSDT done, you're now [ready to compile the SSDT!](/Manual/compile.md)
+ With the SSDT done, you're now [ready to compile the SSDT!](/compile.md)
 
 ## Wrapping up
 

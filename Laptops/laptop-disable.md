@@ -84,4 +84,4 @@ If ((CondRefOf (\_SB.PCI0.PEG0.PEGP._DSM) && CondRefOf (\_SB.PCI0.PEG0.PEGP._PS3
 
 Once adapted to your config, head to the compile section
 
-## [Now you're ready to compile the SSDT!](/Manual/compile.md)
+## [Now you're ready to compile the SSDT!](/compile.md)

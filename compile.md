@@ -2,9 +2,9 @@
 
 See [Troubleshooting](/troubleshooting.md) if you have dumping/compiling errors
 
-* [macOS Compiling and Decompiling](/Manual/compile.md#macos)
-* [Windows Compiling and Decompiling](/Manual/compile.md#windows)
-* [Linux Compiling and Decompiling](/Manual/compile.md#linux)
+* [macOS Compiling and Decompiling](/compile.md#macos)
+* [Windows Compiling and Decompiling](/compile.md#windows)
+* [Linux Compiling and Decompiling](/compile.md#linux)
 
 ## macOS
 
@@ -18,7 +18,7 @@ path/to/iasl path/to/DSDT.aml
 
 * If compiled .aml file is provided, a decompiled .dsl file will be given and vice versa.
 
-![](../images/Manual/compile-md/macos-compile.png)
+![](../images/compile-md/macos-compile.png)
 
 ## Windows
 
@@ -28,7 +28,7 @@ Compiling and decompiling on windows is fairly simple though, you will need [ias
 path/to/iasl.exe path/to/DSDT.aml
 ```
 
-![](../images/Manual/compile-md/windows-compile.png)
+![](../images/compile-md/windows-compile.png)
 
 * If compiled .aml file is provided, a decompiled .dsl file will be given and vice versa.
 

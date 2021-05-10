@@ -98,8 +98,8 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                '/Manual/dump.md',
-                '/Manual/compile.md',
+                '/dump.md',
+                '/compile.md',
             ]
         },
         {
