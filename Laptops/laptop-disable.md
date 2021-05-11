@@ -28,7 +28,7 @@ This should provided you with an ACPI path for your dGPU, most commonly:
 * Nvidia dGPU: `\_SB.PCI0.PEG0.PEGP`
 * AMD dGPU: `\_SB.PCI0.PEGP.DGFX`
 
-![Credit to 1Revenger1 for the image](../images/Desktops/nvidia.png)
+![Credit to 1Revenger1 for the image](/images/Desktops/nvidia.png)
 
 Now with that, we'll need to change the ACPI path in the SSDT. Main sections:
 
