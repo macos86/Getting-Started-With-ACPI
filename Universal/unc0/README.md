@@ -15,5 +15,5 @@ This SSDT is required for all X99 and many X79 boards, it specifically disables 
 
 The main ways to make this SSDT:
 
-* [Prebuilt](/Universal/unc0-methods/prebuilt.md)
-* [Manual](/Universal/unc0-methods/manual.md)
+* [Prebuilt](/Universal/unc0/prebuilt.md)
+* [Manual](/Universal/unc0/manual.md)
