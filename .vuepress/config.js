@@ -107,7 +107,7 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['/Desktops/', 'Disabilitare le dGPU nei desktop'],
+                ['/.md', 'Disabilitare le dGPU nei desktop'],
             ]
         },
         {
