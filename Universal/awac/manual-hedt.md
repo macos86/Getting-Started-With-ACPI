@@ -8,7 +8,7 @@ To start, first open your decompiled DSDT you got from [Dumping the DSDT](/dump.
 
 Now search for `PNP0B00` and look at the `_CRS` entry within it:
 
-![]($withBase/images/Universal/awac-md/rtc-range-check.png)
+![](../../images/Universal/awac-md/rtc-range-check.png)
 
 And from the above example, we see we have 2 banks of RTC memory:
 
@@ -36,7 +36,7 @@ You should get something like the following show up:
 
 RTC Pathing | LPC Pathing          |  PCI Pathing
 :----------:|:-------------------------:|:-------------------------:
-![]($withBase/images/Universal/awac-md/rtc-name.png) | ![]($withBase/images/Universal/nvram-md/lpc.png)  |  ![]($withBase/images/Universal/nvram-md/pci0.png)
+![](../../images/Universal/awac-md/rtc-name.png) | ![](../../images/Universal/nvram-md/lpc.png)  |  ![](../../images/Universal/nvram-md/pci0.png)
 
 From the above, we can see we have `RTC`, `LPC0` and `PCI0`. Now we can head to the next stage
 
@@ -60,7 +60,7 @@ External (_SB_.PC00.LPC0.RTC_, DeviceObj) <- Rename this
 Scope (_SB.PC00.LPC0) <- Rename this
 ```
 
-![]($withBase/images/Universal/awac-md/ssdt-before-rename-hedt.png)
+![](../../images/Universal/awac-md/ssdt-before-rename-hedt.png)
 
 Following the example pathing we found, the SSDT should look something like this:
 
@@ -92,7 +92,7 @@ Scope (_SB.PCI0.LPC0) <- Renamed
   */ <- Remove if your RTC device didn't have an _STA
 ```
 
-![]($withBase/images/Universal/awac-md/ssdt-after-rename-hedt.png)
+![](../../images/Universal/awac-md/ssdt-after-rename-hedt.png)
 
 ### Compiling the SSDT
 

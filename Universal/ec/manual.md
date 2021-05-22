@@ -19,7 +19,7 @@ Finding the ACPI pathing is quite easy actually, first open your decompiled DSDT
 
 Next, search for `PNP0C09`. You should get something similar:
 
-![]($withBase/images/desktop/pnp.png)
+![](../../images/desktop/pnp.png)
 
 From the above example we see 2 main things:
 
@@ -53,7 +53,7 @@ If you already have Windows installed on this machine, finding the EC pathing is
 
 Start by opening up Device Manager in Windows and looking for a device named `Embedded Controller`. Once found, click on it and select the `BIOS device Name` entry. You should get something like this:
 
-![]($withBase/images/desktop/ec.png)
+![](../../images/desktop/ec.png)
 
 From the above, we can see that our pathing is `SB.PC00.LPC0.EC0`
 
@@ -84,7 +84,7 @@ External (_SB_.PCI0.LPCB, DeviceObj) <- Rename this
 Scope (_SB.PCI0.LPCB) <- Rename this
 ```
 
-![]($withBase/images/desktop/ssdt-before.png)
+![](../../images/desktop/ssdt-before.png)
 
 Following the example pathing we found, the SSDT should look something like this:
 
@@ -96,7 +96,7 @@ External (_SB_.PC00.LPC0, DeviceObj) <- Renamed
 Scope (_SB.PC00.LPC0) <- Renamed
 ```
 
-![]($withBase/images/desktop/ssdt-after.png)
+![](../../images/desktop/ssdt-after.png)
 
 ## Edge Cases
 

@@ -18,7 +18,7 @@ path/to/iasl path/to/DSDT.aml
 
 * If compiled .aml file is provided, a decompiled .dsl file will be given and vice versa.
 
-![]($withBase/images/compile-md/macos-compile.png)
+![](./images/compile-md/macos-compile.png)
 
 ## Windows
 
@@ -28,7 +28,7 @@ Compiling and decompiling on windows is fairly simple though, you will need [ias
 path/to/iasl.exe path/to/DSDT.aml
 ```
 
-![]($withBase/images/compile-md/windows-compile.png)
+![](./images/compile-md/windows-compile.png)
 
 * If compiled .aml file is provided, a decompiled .dsl file will be given and vice versa.
 

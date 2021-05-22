@@ -23,7 +23,7 @@ For users who don't have all the options available to them in SSDTTime, you can 
 
 Run the `SSDTTime.bat` file as Admin on the target machine and you should see something like this:
 
-![]($withBase/images/ssdt-easy-md/ssdttime.png)
+![](/images/ssdt-easy-md/ssdttime.png)
 
 What are all these options?:
 

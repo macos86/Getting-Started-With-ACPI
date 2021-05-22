@@ -18,9 +18,9 @@ Trovare il percorso PCI di una GPU è abbastanza semplice, il miglior modo di fa
 * Sotto la scheda Dettagli, cerca per "Percorso di Allocazione" (Location Paths)
   * Nota che alcune GPU potrebbero nasconderlo sotto la voce "Nome dispositivo BIOS"
 
-![]($withBase/images/desktop/amd.png)
+![](./images/desktop/amd.png)
 
-![]($withBase/images/desktop/nvidia.png)
+![](./images/desktop/nvidia.png)
 
 "ACPI" è ciò che ci interesssa:
 
