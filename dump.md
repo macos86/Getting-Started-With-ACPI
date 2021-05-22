@@ -70,6 +70,6 @@ fs0:\> dir  // to verify this is the right directory
    01/01/01 3:30p EFI
 fs0:\> cd EFI\OC\Tools
 fs0:\EFI\OC\Tools> acpidump.efi -b -n DSDT -z  
- ```
+```
 
- Once done, you should find your DSDT in the EFI/OC/Tools folder with a `.dat` extension. Rename this DSDT.dat file to DSDT.aml to help us down the line
+Once done, you should find your DSDT in the EFI/OC/Tools folder with a `.dat` extension. Rename this DSDT.dat file to DSDT.aml to help us down the line
