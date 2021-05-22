@@ -10,7 +10,7 @@ Next, search for the `Device (RHUB)`
 
 You should get something like the following show up:
 
-![](../../images/Universal/rhub-md/rhub-path.png)
+![]($withBase/images/Universal/rhub-md/rhub-path.png)
 
 From the above, we can see that the full ACPI pathing for RHUB is `PCI0.XHC.RHUB`. If it's not as clear you can search for what those device paths are for your system:
 
@@ -39,7 +39,7 @@ External (_SB_.PCI0.XHC1.RHUB, DeviceObj) <- Rename this
 Scope (_SB.PCI0.XHC1.RHUB) <- Rename this
 ```
 
-![](../../images/Universal/rhub-md/ssdt-before.png)
+![]($withBase/images/Universal/rhub-md/ssdt-before.png)
 
 Following the example pathing we found, the SSDT should look something like this:
 
@@ -51,7 +51,7 @@ External (_SB.PCI0.XHC.RHUB, DeviceObj) <- Renamed
 Scope (_SB.PCI0.XHC.RHUB) <- Renamed
 ```
 
-![](../../images/Universal/rhub-md/ssdt-after.png)
+![]($withBase/images/Universal/rhub-md/ssdt-after.png)
 
 ## Compiling the SSDT
 

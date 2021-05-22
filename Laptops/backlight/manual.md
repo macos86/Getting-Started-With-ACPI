@@ -38,7 +38,7 @@ Scope (_SB.PCI0.GFX0) <- Rename this
 Device(_SB.PCI0.GFX0.PNLF) <- Rename this
 ```
 
-![](../../images/Laptops/backlight-md/ssdt-before.png)
+![]($withBase/images/Laptops/backlight-md/ssdt-before.png)
 
 Following the example pathing we found, the SSDT should look something like this:
 
@@ -52,7 +52,7 @@ Scope (_SB.PCI0.GPU0) <- Renamed
 Device(_SB.PCI0.GPU0.PNLF) <- Renamed
 ```
 
-![](../../images/Laptops/backlight-md/ssdt-after.png)
+![]($withBase/images/Laptops/backlight-md/ssdt-after.png)
 
 ## Compiling the SSDT
 
