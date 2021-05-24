@@ -226,7 +226,7 @@ module.exports = {
             sidebarDepth: 1,
             children: [
                 ['/troubleshooting.md', 'Risoluzione dei Problemi'],
-                ['/CONTRIBUTING.md', 'Contribuire'],
+                ['https://macos86.github.io/CONTRIBUTING.html', 'Contribuire'],
             ]
         },
         ],
