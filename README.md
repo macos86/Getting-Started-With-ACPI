@@ -1,3 +1,14 @@
+---
+home: true
+heroImage: acpi-logo.png
+heroText: Iniziamo con gli ACPI by Dortania
+actionText: Iniziamo→
+actionLink: ssdt-platform.md
+meta:
+- name: description
+  content: Versione attualmente supportata 0.6.8
+---
+
 # Iniziamo con ACPI
 
 ## Una spiegazione rapida sugli ACPI

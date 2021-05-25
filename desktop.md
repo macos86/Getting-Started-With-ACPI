@@ -1,4 +1,4 @@
-# Disabilitare le GPU nei desktop (SSDT-GPU-DISABLE)
+# Disabilitare le schede video non supportate nei desktop (SSDT-GPU-DISABLE)
 
 [[toc]]
 
