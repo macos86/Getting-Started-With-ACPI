@@ -1,46 +1,46 @@
-# Getting a copy of your DSDT
+# Ottenere una copia del tuo DSDT
 
-So to start, we'll need to get a copy of your DSDT from your firmware. The easiest way is grabbing the DSDT.aml SSDTTime dumped for us earlier but here are some other options:
+Per iniziare, otterremo una copia degli DSDT dal firmware. La via più veloce è quella di generare il file DSDT da SSDTTime, ma ecco altre opzioni:
 
-## From Windows
+## Da Windows
 
-* [SSDTTime](https://github.com/corpnewt/SSDTTime)
-  * Supports both Windows and Linux for DSDT dumping
-  * `8. Dump DSDT - Automatically dump the system DSDT`
+* [SSDTTime](https://github.com/corpnewt/SSDTTime/archive/refs/heads/master.zip)
+  * Supporto di Windows e Linux per effettuare il dump del DSDT
+  * `N. Dump DSDT - Automatically dump the system DSDT`
 * [acpidump.exe](https://acpica.org/downloads/binary-tools)
-  * In command prompt run `path/to/acpidump.exe -b -n DSDT -z`, this will dump your DSDT as a .dat file. Rename this to DSDT.aml
+  * Nel prompt dei comandi usare `path/to/acpidump.exe -b -n DSDT -z`, questo creerà il tuo DSDT con estensione .dat. Rinominalo come DSDT.aml
   
-* Do note that all ACPI patches from clover/OpenCore will be applied to the DSDT with the above 2 methods
+* Prendi nota che tutte le patch ACPI da Clover/OpenCore saranno applicate con questi 2 metodi
   
-## From Linux
+## Da Linux
 
-* [SSDTTime](https://github.com/corpnewt/SSDTTime)
-  * Supports both Windows and Linux for DSDT dumping
-  * `4. Dump DSDT - Automatically dump the system DSDT`
-* Do note that all ACPI patches from clover/OpenCore will be applied to the DSDT with the above method
+* [SSDTTime](https://github.com/corpnewt/SSDTTime/archive/refs/heads/master.zip)
+  * Supporto di Windows e Linux per effettuare il dump del DSDT
+  * `N. Dump DSDT - Automatically dump the system DSDT`
+* Prendi nota che tutte le patch ACPI da Clover/OpenCore saranno applicate con questi 2 metodi
 
-## From Clover
+## Da Clover
 
-For those with Clover installed previously, this is a simple way to get your ACPI tables:
+Per chi ha Clover precedentemente installato, questo è un metodo semplice per ottenere le tue tabelle ACPI:
 
-* F4 in Clover Boot menu
-  * DSDT can be found in `EFI/CLOVER/ACPI/origin`, the folder **must** exist before dumping
+* F4 nel menù di avvio Clover
+  * Lo DSDT sarà creato in `EFI/CLOVER/ACPI/origin`, la cartella **deve** esistere prima di creare il DSDT
 
-## From OpenCore
+## Da OpenCore
 
-With OpenCore, we have 2 options:
+Da OpenCore, abbiamo due opzioni:
 
-* [SysReport Quirk](#sysreport-quirk)
+* [Quirk del SysReport](#quirk-del-sysreport)
 * [UEFI Shell](#uefi-shell)
 
-### SysReport Quirk
+### Quirk delSysReport
 
-With OpenCore 0.5.9, we have a new quirk called SysReport which will actually dump your DSDT automatically when hitting the boot screen. The main issues are:
+Da OpenCore 0.5.9, abbiamo aggiunto un nuovo quirk chiamato SysReport che creerà tutte le tabelle DSDT automaticamente quando avvia. I principali problemi sono:
 
-* You already need a bootable OpenCore USB to get this dump
-* This also requires a DEBUG version of 0.5.9
+* Devi avere già una USB avviabile con OpenCore per usare questo metodo ([qui](https://github.com/HackintoshItalia/opencore-debug/releases/latest) ne puoi trovare una già pronta!)
+* Richiede oltretutto una versione di DEBUG di 0.5.9+
 
-For the latter, you just need to replace the following files with [DEBUG version](https://github.com/acidanthera/OpenCorePkg/releases):
+Devi solo rimpiazzare i seguenti file con quelli della [versione di DEBUG](https://github.com/acidanthera/OpenCorePkg/releases):
 
 * EFI/BOOT/
   * `BOOTx64.efi`
@@ -51,25 +51,25 @@ For the latter, you just need to replace the following files with [DEBUG version
 * EFI/OC/
   * `OpenCore.efi`
 
-For the former, you can actually skip the ACPI section, return to the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/) and finish making the USB. Once booted to the picker, you can shut off the PC and check your USB:
+Per avviare, salta la sezione ACPI, ritorna alla [homepage](..) e fai un config.plist valido per avviare la USB. Una volta avviata la USB, spegni il PC e controlla la USB:
 
 ![](./images/dump-md/sysreport.png)
 
-And voila! You have a DSDT! Now you can continue on with making SSDTs
+E voilà! Hai un DSDT! Ora puoi continuare facendo gli SSDT
 
 ### UEFI Shell
 
-For this, we'll want to grab [`acpidump.efi`](https://github.com/macos86/OpenCore-Install-Guide/tree/master/extra-files/acpidump.efi) and add this to `EFI/OC/Tools` and in your config under `Misc -> Tools` with the argument: `-b -n DSDT -z` and select this option in OpenCore's picker.
+Per questo, dobbiamo prendere [`acpidump.efi`](https://github.com/macos86/OpenCore-Install-Guide/tree/master/extra-files/acpidump.efi) e metterlo nei `EFI/OC/Tools` e nel config.plist nella sezione `Misc -> Tools` con gli argomenti: `-b -n DSDT -z` e seleziona quella opzione nel config di OpenCore.
 
-If OpenCore is having issues running acpidump.efi from the boot picker, you can call it from the shell with [OpenShell](https://github.com/acidanthera/OpenCorePkg/releases)(reminder to add to both `EFI/OC/Tools` and in your config under `Misc -> Tools` ):
+Se OpenCore non riesce ad avviare acpidump.efi dal picker, puoi provare con la [OpenShell (inclusa con OpenCore)](https://github.com/acidanthera/OpenCorePkg/releases) (ricorda di aggiungerlo sia in `EFI/OC/Tools` che nel config.plist in `Misc -> Tools` ):
 
 ```
-shell> fs0: // replace with proper drive
-fs0:\> dir  // to verify this is the right directory
+shell> fs0: // rimpiazza con il corretto disco
+fs0:\> dir  // verifica che sia la corretta cartella
    Directory of fs0:\
    01/01/01 3:30p EFI
 fs0:\> cd EFI\OC\Tools
 fs0:\EFI\OC\Tools> acpidump.efi -b -n DSDT -z  
 ```
 
-Once done, you should find your DSDT in the EFI/OC/Tools folder with a `.dat` extension. Rename this DSDT.dat file to DSDT.aml to help us down the line
+Una volta fatto, dovresti trovare i tuoi DSDT nella cartella EFI/OC/Tools con estensione `.dat`. Rinomina questo DSDT.dat come DSDT.aml per maggiore chiarezza
