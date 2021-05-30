@@ -1,50 +1,47 @@
-# Troubleshooting
+# Risoluzione dei problemi
 
 [[toc]]
 
-## Fixing SSDTTime: `Could not locate or download iasl!`
+## Correzione per SSDTTime: `Could not locate or download iasl!`
 
-This is usually due to an outdated version of Python, try either updating Python or add iasl to the scripts folder for SSDTTime:
+Ciò è solitamente dovuto a una versione obsoleta di Python; prova ad aggiornarlo o aggiungi iasl alla cartella degli script per SSDTTime:
 
-* [iasl macOS version](https://bitbucket.org/RehabMan/acpica/downloads/iasl.zip)
-* [iasl Windows version](https://acpica.org/downloads/binary-tools)
-* [iasl Linux version](http://amdosx.kellynet.nl/iasl.zip)
+* [iasl versione macOS](https://bitbucket.org/RehabMan/acpica/downloads/iasl.zip)
+* [iasl versione Windows](https://acpica.org/downloads/binary-tools)
+* [iasl versione Linux (da compilare)](https://acpica.org/downloads)
 
-## Can't run `acpidump.efi` from OpenCore
+## Non posso eseguire`acpidump.efi`
 
-Grab [OpenShell](https://github.com/acidanthera/OpenCorePkg/releases) and add it to EFI/OC/Tools and config.plist -> Misc -> Tools.
-
-Next, call upon OpenCore shell and enter the following:
+Apri la shell OpenCore:
 
 ```
-shell> fs0: //replace with proper drive
+shell> fs0: //inserire il drive aduguato
 
-fs0:\> dir //to verify this is the right directory
+fs0:\> dir //per verificare che questa sia la directory giusta
 
   Directory of fs0:\
 
    01/01/01 3:30p  EFI
-
-fs0:\> cd EFI\OC\Tools //note that its with forward slashes
+fs0:\> cd EFI\OC\Tools //nota che è con le backslash
 
 fs0:\EFI\OC\Tools> acpidump.efi -b -n DSDT -z
 ```
 
-## iASL warning, # unresolved
+## iASL warning, only X unresolved
 
-If you try to decompile your DSDT and get an error similar to this:
+Se provi a decompilare il tuo DSDT e ottieni un errore simile a questo:
 
 ```
 iASL Warning: There were 19 external control methods found during disassembly, but only 0 were resolved (19 unresolved)
 ```
 
-This happens when one ACPI table requires the rest for proper referencing, it does not accept the creation of DSDTs as we're only using it for creating a select few SSDTs. For those who are worried, you can run the following:
+Ciò accade quando una tabella ACPI richiede il resto per un corretto riferimento, non accetta la creazione di DSDT poiché la stiamo utilizzando solo per la creazione di pochi SSDT selezionati. Per coloro che sono preoccupati, puoi eseguire quanto segue:
 
 ```
-iasl * [insert all ACPI files here]
+iasl * [insersci tutti i file ACPI files qui]
 ```
 
-## Decompiling Error
+## Decompiliation Error
 
 ![](./images/troubleshooting-md/decompile-error.png)
 
@@ -54,16 +51,16 @@ Acpi table [DSDT] successfully installed and loaded
 Pass 1 parse of [DSDT]
 ```
 
-This is a common error on DSDTs that have methods that aren't supported by MaciASL, the easiest way is to delete MaciASL and make sure you grab it from Acidanthera's repo: [MaciASL](https://github.com/acidanthera/MaciASL/releases)
+Questo è un errore comune nei DSDT che hanno metodi non supportati da MaciASL, la cosa migliore da fare in questo caso, è cancellare MaciASL e assicurarsi di scaricarla dalla repo Acidanthera: [MaciASL](https://github.com/acidanthera/MaciASL/releases/latest)
 
 ## Invalid character (0x3D), expecting ASL keyword or name
 
 ![](./images/troubleshooting-md/invalid-parse.png)
 
-Similar to the above error, you're running an outdated copy of MaciASL. Make sure you're using the latest from Acidanthera's repo: [MaciASL](https://github.com/acidanthera/MaciASL/releases)
+Similmente all'errore superiore, stai usando una vecchia versione di MaciASL. Assicurati di star usando l'ultima versione dalla repo Acidanthera: [MaciASL](https://github.com/acidanthera/MaciASL/releases/latest)
 
 ## Syntax error, unexpected PARSEOP_ONE, expecting '('
 
 ![](./images/troubleshooting-md/invalid-parse.png)
 
-Similar to the above 2 errors, you're running an outdated copy of MaciASL. Make sure you're using the latest from Acidanthera's repo: [MaciASL](https://github.com/acidanthera/MaciASL/releases)
+Similmente agli errori superiori, stai usando una vecchia versione di MaciASL. Assicurati di star usando l'ultima versione dalla repo Acidanthera: [MaciASL](https://github.com/acidanthera/MaciASL/releases/latest)
