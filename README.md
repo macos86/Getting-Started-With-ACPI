@@ -5,7 +5,7 @@ heroText: Iniziamo con gli ACPI by Dortania
 actions:
   - text: Iniziamo→
     link: ssdt-platform.md
-tagline: Versione attualmente supportata 0.6.9
+tagline: Versione attualmente supportata 0.7.0
 ---
 
 # Iniziamo con ACPI
