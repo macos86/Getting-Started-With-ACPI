@@ -1,9 +1,6 @@
 node_modules/
 .vscode/
 .DS_Store
-.vuepress/dist
-.vuepress/.temp
-.vuepress/.cache
 .yarn/*
 !.yarn/cache
 !.yarn/patches
@@ -11,4 +8,3 @@ node_modules/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-package-lock.json
