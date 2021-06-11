@@ -9,11 +9,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2.3.4
-      - name: Setup Git
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
       - name: Setup Node
         uses: actions/setup-node@v2.1.5
         with:
@@ -25,4 +20,10 @@ jobs:
       - name: Lint
         run: yarn fixlint
       - name: Commit
-        run: git pull && git commit -am "Updated packages and submodules" && git push || echo "Done"
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git pull
+          git commit -am "Updated packages and submodules"
+          git push
