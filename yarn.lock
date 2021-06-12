@@ -189,7 +189,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:0.1.3, markdownlint-cli2@npm:^0.1.3":
+"markdownlint-cli2@npm:0.1.3, markdownlint-cli2@npm:latest":
   version: 0.1.3
   resolution: "markdownlint-cli2@npm:0.1.3"
   dependencies:
@@ -279,7 +279,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    markdownlint-cli2: ^0.1.3
+    markdownlint-cli2: latest
   languageName: unknown
   linkType: soft
 
