@@ -10,7 +10,7 @@ Per favore vedi la **tua specifica sezione ACPI per il tuo config.plist**, tutti
 | :-------: | :-----: | :----: | :------: | :-------: | :-----: |
 | Penryn | / | [SSDT-EC](/Universal/ec/) | / | / | / |
 | Lynnfield e Clarkdale | ^^ | ^^ | ^^ | ^^ | ^^ |
-| SandyBridge | [CPU-PM](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management) (Da fare nel Post-Install) | ^^ | ^^ | ^^ | ^^ |
+| SandyBridge | [CPU-PM](/OpenCore-Post-Install/universal/pm.md#sandy-and-ivy-bridge-power-management) (Da fare nel Post-Install) | ^^ | ^^ | ^^ | ^^ |
 | Ivy Bridge | ^^ | ^^ | ^^ | ^^ | ^^ |
 | Haswell | [SSDT-PLUG](/Universal/plug/) | ^^ | ^^ | ^^ | ^^ |
 | Broadwell | ^^ | ^^ | ^^ | ^^ | ^^ |
@@ -37,7 +37,7 @@ Per favore vedi la **tua specifica sezione ACPI per il tuo config.plist**, tutti
 | Piattaforme | **CPU** | **EC** | **Backlight** | **I2C Trackpad** | **AWAC** | **USB** | **IRQ** |
 | :-------: | :-----: | :----: | :-----------: | :--------------: | :------: | :-----: | :-----: |
 | Clarksfield e Arrandale | / | [SSDT-EC](/Universal/ec/) | [SSDT-PNLF](/Laptops/backlight/) | / | / | / | [IRQ SSDT](/Universal/irq/) |
-| SandyBridge | [CPU-PM](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management) (Run in Post-Install) | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
+| SandyBridge | [CPU-PM](/OpenCore-Post-Install/universal/pm.md#sandy-and-ivy-bridge-power-management) (Run in Post-Install) | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
 | Ivy Bridge | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
 | Haswell | [SSDT-PLUG](/Universal/plug/) | ^^ | ^^ | [SSDT-GPI0](/Laptops/trackpad/) | ^^ | ^^ | ^^ |
 | Broadwell | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |

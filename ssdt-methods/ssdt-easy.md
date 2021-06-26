@@ -50,7 +50,7 @@ What we want to do is select option `8. Dump DSDT` first, then select the approp
 
 For Skylake and newer plus AMD, you can grab a pre-built file here: [SSDT-USBX.aml](https://github.com/macos86/OpenCore-Post-Install/blob/master/extra-files/SSDT-USBX.aml). This file is plug and play and requires no device configuration, **do not use on Broadwell and older**.
 
-**Troubleshooting note**: See [General Troubleshooting](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/troubleshooting.html) if you're having issues running SSDTTime
+**Troubleshooting note**: See [General Troubleshooting](/OpenCore-Install-Guide/troubleshooting/troubleshooting.md) if you're having issues running SSDTTime
 
 ## Adding to OpenCore
 
@@ -63,7 +63,7 @@ Reminder that Cmd/Ctrl+R with ProperTree pointed at your OC folder will add all 
 
 For those who do not yet have a config.plist, you'll want to next head back to your respective OpenCore guides and create the config.plist:
 
-* [OpenCore Install guide](https://dortania.github.io/OpenCore-Install-Guide/)
+* [OpenCore Install guide](/)
 
 Users of `FixHPET` will also need to merge oc_patches.plist into their config.plist
 

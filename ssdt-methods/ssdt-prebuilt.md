@@ -12,7 +12,7 @@ Semplicemente scegli il tipo di hardware e la generazione, dopo scarica i file a
 | ----------- | ------- | ------ | -------- | --------- | ------- | -------- |
 | Penryn | / | [SSDT-EC](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-EC-DESKTOP.aml) | / | / | / | / |
 | Lynnfield e Clarkdale | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
-| Sandy Bridge | [CPU-PM](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management) (Da fare nel Post-Install) | ^^ | ^^ | ^^ | ^^ | [SSDT-IMEI](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-IMEI.aml) |
+| Sandy Bridge | [CPU-PM](/OpenCore-Post-Install/universal/pm.md#sandy-and-ivy-bridge-power-management) (Da fare nel Post-Install) | ^^ | ^^ | ^^ | ^^ | [SSDT-IMEI](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-IMEI.aml) |
 | Ivy Bridge | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
 | Haswell | [SSDT-PLUG](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-PLUG-DRTNIA.aml) | ^^ | ^^ | ^^ | ^^ | / |
 | Broadwell | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
@@ -39,7 +39,7 @@ Semplicemente scegli il tipo di hardware e la generazione, dopo scarica i file a
 | Piattaforme | **CPU** | **EC** | **Backlight** | **AWAC** | **USB** | **NVRAM** | **IMEI** |
 | ------- | ----- | ---- | ----------- | -------------- | ------ | ---- | ----- |
 | Clarksfield e Arrandale | / | [SSDT-EC-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-EC-LAPTOP.aml) | [SSDT-PNLF](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-PNLF.aml) | / | / | / | / |
-| SandyBridge | [CPU-PM](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management) (Run in Post-Install) | ^^ | ^^ | ^^ | ^^ | ^^ | [SSDT-IMEI](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-IMEI.aml) |
+| SandyBridge | [CPU-PM](/OpenCore-Post-Install/universal/pm.md#sandy-and-ivy-bridge-power-management) (Run in Post-Install) | ^^ | ^^ | ^^ | ^^ | ^^ | [SSDT-IMEI](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-IMEI.aml) |
 | Ivy Bridge | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
 | Haswell | [SSDT-PLUG-DRTNIA](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-PLUG-DRTNIA.aml) | ^^ | ^^ | ^^ | ^^ | ^^ | / |
 | Broadwell | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
