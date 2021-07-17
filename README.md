@@ -4,7 +4,7 @@ heroImage: /acpi-logo.png
 heroText: Iniziamo con gli ACPI by Dortania
 actions:
   - text: Iniziamo→
-    link: ssdt-platform.md
+    link: ssdt-methods/
 tagline: Versione attualmente supportata 0.7.0
 ---
 
