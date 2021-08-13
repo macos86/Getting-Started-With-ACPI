@@ -6,9 +6,8 @@
 
 Ciò è solitamente dovuto a una versione obsoleta di Python; prova ad aggiornarlo o aggiungi iasl alla cartella degli script per SSDTTime:
 
-* [iasl versione macOS](https://bitbucket.org/RehabMan/acpica/downloads/iasl.zip)
+* [iasl versione macOS e Linux](https://github.com/macos86/ACPI-Tools-Binaries-generator/releases)
 * [iasl versione Windows](https://acpica.org/downloads/binary-tools)
-* [iasl versione Linux (da compilare)](https://acpica.org/downloads)
 
 ## Non posso eseguire`acpidump.efi`
 
