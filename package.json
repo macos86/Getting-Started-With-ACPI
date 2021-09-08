@@ -4,6 +4,7 @@
   },
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
-    "markdownlint-cli2": "latest"
-  }
+    "markdownlint-cli2": "0.3.0"
+  },
+  "packageManager": "yarn@3.0.2"
 }

@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["markdownlint-cli2", "npm:0.1.3"]
+            ["markdownlint-cli2", "npm:0.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -164,10 +164,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["globby", [
-        ["npm:11.0.3", {
-          "packageLocation": "./.yarn/cache/globby-npm-11.0.3-bb0a10f600-7d0d3e1bcb.zip/node_modules/globby/",
+        ["npm:11.0.4", {
+          "packageLocation": "./.yarn/cache/globby-npm-11.0.4-592ce71cca-d3e02d5e45.zip/node_modules/globby/",
           "packageDependencies": [
-            ["globby", "npm:11.0.3"],
+            ["globby", "npm:11.0.4"],
             ["array-union", "npm:2.1.0"],
             ["dir-glob", "npm:3.0.1"],
             ["fast-glob", "npm:3.2.5"],
@@ -226,10 +226,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["markdown-it", [
-        ["npm:12.0.4", {
-          "packageLocation": "./.yarn/cache/markdown-it-npm-12.0.4-f58fa54bda-001451527c.zip/node_modules/markdown-it/",
+        ["npm:12.2.0", {
+          "packageLocation": "./.yarn/cache/markdown-it-npm-12.2.0-eccbcc4533-8e3d6646ed.zip/node_modules/markdown-it/",
           "packageDependencies": [
-            ["markdown-it", "npm:12.0.4"],
+            ["markdown-it", "npm:12.2.0"],
             ["argparse", "npm:2.0.1"],
             ["entities", "npm:2.1.0"],
             ["linkify-it", "npm:3.0.2"],
@@ -240,24 +240,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["markdownlint", [
-        ["npm:0.23.1", {
-          "packageLocation": "./.yarn/cache/markdownlint-npm-0.23.1-8de5b78dcb-e80a903c8c.zip/node_modules/markdownlint/",
+        ["npm:0.24.0", {
+          "packageLocation": "./.yarn/cache/markdownlint-npm-0.24.0-652725932e-5308070947.zip/node_modules/markdownlint/",
           "packageDependencies": [
-            ["markdownlint", "npm:0.23.1"],
-            ["markdown-it", "npm:12.0.4"]
+            ["markdownlint", "npm:0.24.0"],
+            ["markdown-it", "npm:12.2.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["markdownlint-cli2", [
-        ["npm:0.1.3", {
-          "packageLocation": "./.yarn/cache/markdownlint-cli2-npm-0.1.3-8b022ab283-d1c88d0b8a.zip/node_modules/markdownlint-cli2/",
+        ["npm:0.3.0", {
+          "packageLocation": "./.yarn/cache/markdownlint-cli2-npm-0.3.0-ea6ce18ca4-805ad0d0ba.zip/node_modules/markdownlint-cli2/",
           "packageDependencies": [
-            ["markdownlint-cli2", "npm:0.1.3"],
-            ["globby", "npm:11.0.3"],
-            ["markdownlint", "npm:0.23.1"],
-            ["markdownlint-cli2-formatter-default", "virtual:8b022ab283b824d7e148901c123a7ec5af63d1dbf2ea189fc7fe17f4d2ea9ab0e5633680220ff90286480ec75580017c8bae43bc6bb528bb1b23c07641637426#npm:0.0.2"],
-            ["markdownlint-rule-helpers", "npm:0.14.0"],
+            ["markdownlint-cli2", "npm:0.3.0"],
+            ["globby", "npm:11.0.4"],
+            ["markdownlint", "npm:0.24.0"],
+            ["markdownlint-cli2-formatter-default", "virtual:ea6ce18ca437f4f1c632fe5eae7ac1ae3354c875e1eee3ceb84c9eaf12f26e59428f0b73d499801216eeafb116490fab0ef979373c291b57a9c5a9d9a6d67253#npm:0.0.2"],
+            ["markdownlint-rule-helpers", "npm:0.15.0"],
             ["micromatch", "npm:4.0.4"],
             ["strip-json-comments", "npm:3.1.1"],
             ["yaml", "npm:1.10.2"]
@@ -273,12 +273,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:8b022ab283b824d7e148901c123a7ec5af63d1dbf2ea189fc7fe17f4d2ea9ab0e5633680220ff90286480ec75580017c8bae43bc6bb528bb1b23c07641637426#npm:0.0.2", {
-          "packageLocation": "./.yarn/__virtual__/markdownlint-cli2-formatter-default-virtual-af37fef3bc/0/cache/markdownlint-cli2-formatter-default-npm-0.0.2-b003a60a39-c1bd4b741a.zip/node_modules/markdownlint-cli2-formatter-default/",
+        ["virtual:ea6ce18ca437f4f1c632fe5eae7ac1ae3354c875e1eee3ceb84c9eaf12f26e59428f0b73d499801216eeafb116490fab0ef979373c291b57a9c5a9d9a6d67253#npm:0.0.2", {
+          "packageLocation": "./.yarn/__virtual__/markdownlint-cli2-formatter-default-virtual-c8509056fe/0/cache/markdownlint-cli2-formatter-default-npm-0.0.2-b003a60a39-c1bd4b741a.zip/node_modules/markdownlint-cli2-formatter-default/",
           "packageDependencies": [
-            ["markdownlint-cli2-formatter-default", "virtual:8b022ab283b824d7e148901c123a7ec5af63d1dbf2ea189fc7fe17f4d2ea9ab0e5633680220ff90286480ec75580017c8bae43bc6bb528bb1b23c07641637426#npm:0.0.2"],
+            ["markdownlint-cli2-formatter-default", "virtual:ea6ce18ca437f4f1c632fe5eae7ac1ae3354c875e1eee3ceb84c9eaf12f26e59428f0b73d499801216eeafb116490fab0ef979373c291b57a9c5a9d9a6d67253#npm:0.0.2"],
             ["@types/markdownlint-cli2", null],
-            ["markdownlint-cli2", "npm:0.1.3"]
+            ["markdownlint-cli2", "npm:0.3.0"]
           ],
           "packagePeers": [
             "@types/markdownlint-cli2",
@@ -288,10 +288,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["markdownlint-rule-helpers", [
-        ["npm:0.14.0", {
-          "packageLocation": "./.yarn/cache/markdownlint-rule-helpers-npm-0.14.0-b91ba34e45-c428810bd0.zip/node_modules/markdownlint-rule-helpers/",
+        ["npm:0.15.0", {
+          "packageLocation": "./.yarn/cache/markdownlint-rule-helpers-npm-0.15.0-a9ff1ff8dd-c8cc35fdad.zip/node_modules/markdownlint-rule-helpers/",
           "packageDependencies": [
-            ["markdownlint-rule-helpers", "npm:0.14.0"]
+            ["markdownlint-rule-helpers", "npm:0.15.0"]
           ],
           "linkType": "HARD",
         }]
@@ -366,7 +366,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["root-workspace-0b6124", "workspace:."],
-            ["markdownlint-cli2", "npm:0.1.3"]
+            ["markdownlint-cli2", "npm:0.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -6440,7 +6440,7 @@ class VirtualFS extends ProxiedFS {
     if (this.pathUtils.isAbsolute(p)) return VirtualFS.resolveVirtual(p);
     const resolvedRoot = VirtualFS.resolveVirtual(this.baseFs.resolve(PortablePath.dot));
     const resolvedP = VirtualFS.resolveVirtual(this.baseFs.resolve(p));
-    return ppath.relative(resolvedRoot, resolvedP);
+    return ppath.relative(resolvedRoot, resolvedP) || PortablePath.dot;
   }
 
   mapFromBase(p) {

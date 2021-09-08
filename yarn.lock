@@ -112,9 +112,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:~11.0.3":
-  version: 11.0.3
-  resolution: "globby@npm:11.0.3"
+"globby@npm:~11.0.4":
+  version: 11.0.4
+  resolution: "globby@npm:11.0.4"
   dependencies:
     array-union: ^2.1.0
     dir-glob: ^3.0.1
@@ -122,7 +122,7 @@ __metadata:
     ignore: ^5.1.4
     merge2: ^1.3.0
     slash: ^3.0.0
-  checksum: 7d0d3e1bcb618730c8c45edb7c0067f048e1d6a6f561bfaf9c6fb5dd8274ac98b0e1e08109a160a9da1c8f1a9ab692ed36ba719517731f4ed1b29ac203992392
+  checksum: d3e02d5e459e02ffa578b45f040381c33e3c0538ed99b958f0809230c423337999867d7b0dbf752ce93c46157d3bbf154d3fff988a93ccaeb627df8e1841775b
   languageName: node
   linkType: hard
 
@@ -165,9 +165,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:12.0.4":
-  version: 12.0.4
-  resolution: "markdown-it@npm:12.0.4"
+"markdown-it@npm:12.2.0":
+  version: 12.2.0
+  resolution: "markdown-it@npm:12.2.0"
   dependencies:
     argparse: ^2.0.1
     entities: ~2.1.0
@@ -176,7 +176,7 @@ __metadata:
     uc.micro: ^1.0.5
   bin:
     markdown-it: bin/markdown-it.js
-  checksum: 001451527c165b8cda6636c19228dd8a96ce593c2dd08c3d1380fd5294bd8368a7f167a3107da05327abe98b553d4f0cadec9e19eb3b7d4249369a73ae4399e1
+  checksum: 8e3d6646edf8e7ef19ed707c59d16741bd40804f1e7567407efd2f346ae0f7ddcdeada83e7affebd21b9d7d947b27fc60fd795a970461785030a4e52e750122b
   languageName: node
   linkType: hard
 
@@ -189,37 +189,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:0.1.3, markdownlint-cli2@npm:latest":
-  version: 0.1.3
-  resolution: "markdownlint-cli2@npm:0.1.3"
+"markdownlint-cli2@npm:0.3.0":
+  version: 0.3.0
+  resolution: "markdownlint-cli2@npm:0.3.0"
   dependencies:
-    globby: ~11.0.3
-    markdownlint: ~0.23.1
+    globby: ~11.0.4
+    markdownlint: ~0.24.0
     markdownlint-cli2-formatter-default: ^0.0.2
-    markdownlint-rule-helpers: ~0.14.0
-    micromatch: ~4.0.2
+    markdownlint-rule-helpers: ~0.15.0
+    micromatch: ~4.0.4
     strip-json-comments: ~3.1.1
     yaml: ~1.10.2
   bin:
     markdownlint-cli2: markdownlint-cli2.js
     markdownlint-cli2-fix: markdownlint-cli2-fix.js
-  checksum: d1c88d0b8a05ded2017a3ae1d1ee0e741c27ae053d1086a7af8ec5a76b88f5e45b98f6709c2fcb7c3e3a377c0638adf096764f93a549feb4864079051755e853
+  checksum: 805ad0d0bab78b8f10e5b89520d3faace43ac89cdb790c6b22b2a470a9509f695ada3fe060911bc360773e0ba41607a33fd6e6b46482fda35b54086286cb01a8
   languageName: node
   linkType: hard
 
-"markdownlint-rule-helpers@npm:~0.14.0":
-  version: 0.14.0
-  resolution: "markdownlint-rule-helpers@npm:0.14.0"
-  checksum: c428810bd03267b614c021392d65aa78b114110af0f10f14e54c4c0b2734bd496f2a409416fcbdf73fc5378884d913132e4567ab07bd40047c3cd5959383e178
+"markdownlint-rule-helpers@npm:~0.15.0":
+  version: 0.15.0
+  resolution: "markdownlint-rule-helpers@npm:0.15.0"
+  checksum: c8cc35fdadf1908e89d08cffa6ab917c56656cd1f4a4bc04f0640a6835658a26d5917251d6d76aea23c242488e51ea86211115f3af102f1925f339e4d3a2b271
   languageName: node
   linkType: hard
 
-"markdownlint@npm:~0.23.1":
-  version: 0.23.1
-  resolution: "markdownlint@npm:0.23.1"
+"markdownlint@npm:~0.24.0":
+  version: 0.24.0
+  resolution: "markdownlint@npm:0.24.0"
   dependencies:
-    markdown-it: 12.0.4
-  checksum: e80a903c8c92deb69c24f09c64917aa5e1812cceaadd7411316065722c28de4995a53ac2b29451ff701247556d0e31725ae4a215d3f5e13b8ff2c2b25deadedc
+    markdown-it: 12.2.0
+  checksum: 5308070947796d706e752e7dfe6c741fe613d007be152e710a1fb7bbe2f0481beb2be4c0ed053065aea631daeac3f86d66e5e8cb9a753febf35158930771f34f
   languageName: node
   linkType: hard
 
@@ -237,7 +237,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.2, micromatch@npm:~4.0.2":
+"micromatch@npm:^4.0.2, micromatch@npm:~4.0.4":
   version: 4.0.4
   resolution: "micromatch@npm:4.0.4"
   dependencies:
@@ -279,7 +279,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    markdownlint-cli2: latest
+    markdownlint-cli2: 0.3.0
   languageName: unknown
   linkType: soft
 
