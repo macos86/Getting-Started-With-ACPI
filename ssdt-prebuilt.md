@@ -1,6 +1,6 @@
 # SSDT precompilati
 
-Semplicemente scegli il tipo di hardware e la generazione, dopo scarica i file associati. Una volta scaricati, mettili nella tua EFI nella cartella EFI/OC/ACPI e torna al [Setup del config.plist](../config.plist/)
+Semplicemente scegli il tipo di hardware e la generazione, dopo scarica i file associati. Una volta scaricati, mettili nella tua EFI nella cartella EFI/OC/ACPI e torna al [Setup del config.plist](/config.plist/)
 
 [[toc]]
 
