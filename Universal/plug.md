@@ -33,7 +33,6 @@ The main things to note with this method:
 
 ### SSDTTime
 
-
 The second involves using SSDTTime which automates most of the process. See here on how to use it: [SSDTs: Easy Way](/ssdt-methods/ssdt-easy.md)
 
 To get the SSDT-PLUG, run the following:

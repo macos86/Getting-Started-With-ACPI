@@ -76,6 +76,7 @@ The main things to note with this method:
 ### Manual
 
 ::: warning TO-DO
+
 * Finish Edge cases and sample SSDT edits
 :::
 
