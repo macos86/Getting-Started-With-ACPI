@@ -189,9 +189,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:0.3.0":
-  version: 0.3.0
-  resolution: "markdownlint-cli2@npm:0.3.0"
+"markdownlint-cli2@npm:0.3.1":
+  version: 0.3.1
+  resolution: "markdownlint-cli2@npm:0.3.1"
   dependencies:
     globby: ~11.0.4
     markdownlint: ~0.24.0
@@ -203,7 +203,7 @@ __metadata:
   bin:
     markdownlint-cli2: markdownlint-cli2.js
     markdownlint-cli2-fix: markdownlint-cli2-fix.js
-  checksum: 805ad0d0bab78b8f10e5b89520d3faace43ac89cdb790c6b22b2a470a9509f695ada3fe060911bc360773e0ba41607a33fd6e6b46482fda35b54086286cb01a8
+  checksum: b43650e86d89053f17979529166f892cb7ef7951491d80c6fcf780ca6dfced37aa9b358c585bdf75f2706a64cbe7a10f88a0972bbf0d2e5bcbc691e162146a1a
   languageName: node
   linkType: hard
 
@@ -279,7 +279,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    markdownlint-cli2: 0.3.0
+    markdownlint-cli2: 0.3.1
   languageName: unknown
   linkType: soft
 

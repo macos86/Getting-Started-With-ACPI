@@ -33,14 +33,14 @@ Da OpenCore, abbiamo due opzioni:
 * [Quirk del SysReport](#quirk-del-sysreport)
 * [UEFI Shell](#uefi-shell)
 
-### Quirk delSysReport
+### Quirk del SysReport
 
 Da OpenCore 0.5.9, abbiamo aggiunto un nuovo quirk chiamato SysReport che creerà tutte le tabelle DSDT automaticamente quando avvia. I principali problemi sono:
 
-* Devi avere già una USB avviabile con OpenCore per usare questo metodo ([qui](https://github.com/HackintoshItalia/opencore-debug/releases/latest) ne puoi trovare una già pronta!)
+* Devi avere già una USB avviabile con OpenCore per usare questo metodo ([qui](https://github.com/utopia-team/opencore-debug/releases/latest) ne puoi trovare una già pronta!)
 * Richiede oltretutto una versione di DEBUG di 0.5.9+
 
-Devi solo rimpiazzare i seguenti file con quelli della [versione di DEBUG](https://github.com/acidanthera/OpenCorePkg/releases):
+Devi solo rimpiazzare i seguenti file con quelli della [versione di DEBUG](https://github.com/acidanthera/OpenCorePkg/releases/latest):
 
 * EFI/BOOT/
   * `BOOTx64.efi`
@@ -59,9 +59,9 @@ E voilà! Hai un DSDT! Ora puoi continuare facendo gli SSDT
 
 ### UEFI Shell
 
-Per questo, dobbiamo prendere [`acpidump.efi`](https://github.com/macos86/OpenCore-Install-Guide/tree/master/extra-files/acpidump.efi) e metterlo nei `EFI/OC/Tools` e nel config.plist nella sezione `Misc -> Tools` con gli argomenti: `-b -n DSDT -z` e seleziona quella opzione nel config di OpenCore.
+Per questo, dobbiamo prendere [`acpidump.efi`](https://github.com/macos86/macos86.github.io/raw/main/extra-files/acpidump.efi) e metterlo nei `EFI/OC/Tools` e nel config.plist nella sezione `Misc -> Tools` con gli argomenti: `-b -n DSDT -z` e seleziona quella opzione nel config di OpenCore.
 
-Se OpenCore non riesce ad avviare acpidump.efi dal picker, puoi provare con la [OpenShell (inclusa con OpenCore)](https://github.com/acidanthera/OpenCorePkg/releases) (ricorda di aggiungerlo sia in `EFI/OC/Tools` che nel config.plist in `Misc -> Tools` ):
+Se OpenCore non riesce ad avviare acpidump.efi dal picker, puoi provare con la [OpenShell (inclusa con OpenCore)](https://github.com/acidanthera/OpenCorePkg/releases/latest) (ricorda di aggiungerlo sia in `EFI/OC/Tools` che nel config.plist in `Misc -> Tools` ):
 
 ```
 shell> fs0: // rimpiazza con il corretto disco
@@ -72,4 +72,4 @@ fs0:\> cd EFI\OC\Tools
 fs0:\EFI\OC\Tools> acpidump.efi -b -n DSDT -z  
 ```
 
-Una volta fatto, dovresti trovare i tuoi DSDT nella cartella EFI/OC/Tools con estensione `.dat`. Rinomina questo DSDT.dat come DSDT.aml per maggiore chiarezza
+Una volta fatto, dovresti trovare i tuoi DSDT nella cartella EFI/OC/Tools con estensione `.dat`. Rinomina questo `DSDT.dat` come `DSDT.aml` per maggiore chiarezza

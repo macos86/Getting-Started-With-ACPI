@@ -2,6 +2,12 @@
 
 Semplicemente scegli il tipo di hardware e la generazione, dopo scarica i file associati. Una volta scaricati, mettili nella tua EFI nella cartella EFI/OC/ACPI e torna al [Setup del config.plist](/config.plist/)
 
+::: danger Attenzione
+Si ricorda che le tabelle non sono perfette. Quindi consigliamo vivamente di leggere prima il resto per capire cosa (e a chi serve) quel particolare SSDT per evitare di aggiungerne in più o dimenticarne per strada. Si sa, uomo avvisato...
+
+Grazie!
+:::
+
 [[toc]]
 
 ## Spiegazione dei vari SSDT
@@ -86,6 +92,12 @@ Usato per risolvere le definizioni della CPU in ACPI, dato che macOS non support
 In hardware più vecchi potrebbe anche essere necessario utilizzare SSDT-Time per applicare i fix all'IRQ.
 
 ## Tabelle riassuntive
+
+::: danger Attenzione
+Si ricorda che le tabelle non sono perfette. Quindi consigliamo vivamente di leggere prima il resto per capire cosa (e a chi serve) quel particolare SSDT per evitare di aggiungerne in più o dimenticarne per strada. Si sa, uomo avvisato...
+
+Grazie!
+:::
 
 ### Desktop
 

@@ -2,15 +2,10 @@
 home: true
 heroImage: /acpi-logo.png
 heroText: Iniziamo con gli ACPI by Dortania
-actions:
-  - text: Iniziamo→
-    link: ssdt-methods/
 tagline:
 ---
 
 # Iniziamo con ACPI
-
-## Una spiegazione rapida sugli ACPI
 
 Perciò, cosa sono gli DSDT/SSDT? Beh, queste tabelle presenti nel tuo firmware aggiungono dispositivi come controller USB, thread della CPU, controller integrato, orologio di sistema e altro.
 Un DSDT (Differentiated System Description Table) può essere l'insieme di una serie di informazioni passate tramite gli SSDT (Secondary System Description Table).
@@ -21,7 +16,7 @@ Puoi leggere maggiori informazioni riguardo alle specifiche ACPI qui: [Manuale A
 > Perciò, perché ci importano queste tabelle?
 
 macOS può essere testardo riguardo ai dispositivi presenti nel tuo DSDT e dovremmo correggerlo.
-I principali dispositivi che richiedono la correzione per funzionare correttamente:
+<!--I principali dispositivi che richiedono la correzione per funzionare correttamente:
 
 * Controller Integrati abbreviazione EC, da Embedded controller
   * Tutte le macchine moderne o meno con processore Intel hanno un EC (chiamato usualmente H\_EC, ECDV, EC0, ecc...) esposto nel loro DSDT, e anche la maggior parte dei sistemi AMD ce l'hanno esposto. Questi controller generalmente non sono compatibili con macOS e causano i panic, perciò vanno nascosti da macOS. macOS Catalina richiede un dispositivo con il nome `EC`, perciò nei casi limite creeremo un EC fantoccio.
@@ -41,3 +36,16 @@ I principali dispositivi che richiedono la correzione per funzionare correttamen
 * SSDT IRQ e patch ACPI
   * Necessarie per sistemare i conflitti IRQ con DSDT, principalmente per laptop. Esclusivo di SSDTTime
   * Nota che Skylake e sistemi più recenti hanno raramente conflitti IRQ, importante principalmente in Broadwell e meno recenti
+-->
+
+## Creiamo gli SSDT
+
+Creare gli SSDT si può fare in 3 modi:
+
+* [SSDT precompilati](ssdt-prebuilt.md)
+  * Sono universali, ma non insegnano nulla.
+* [SSDTTime](ssdt-easy.md)
+  * Funziona meglio dei precompilati è ottimizzato per il tuo hardware, ma non impari nulla.
+* [Creazione manuale creating them](ssdt-long.md)
+  * Funzionerà sempre, sarà molto più pulita e ti spiega il funzionamento dei file `.aml`
+  * Tuttavia ti dovrai rapportare con il codice.
