@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["markdownlint-cli2", "npm:0.3.1"]
+            ["markdownlint-cli2", "npm:0.3.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -250,13 +250,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["markdownlint-cli2", [
-        ["npm:0.3.1", {
-          "packageLocation": "./.yarn/cache/markdownlint-cli2-npm-0.3.1-e250c7891c-b43650e86d.zip/node_modules/markdownlint-cli2/",
+        ["npm:0.3.2", {
+          "packageLocation": "./.yarn/cache/markdownlint-cli2-npm-0.3.2-8af0fa5707-1648e31aa3.zip/node_modules/markdownlint-cli2/",
           "packageDependencies": [
-            ["markdownlint-cli2", "npm:0.3.1"],
+            ["markdownlint-cli2", "npm:0.3.2"],
             ["globby", "npm:11.0.4"],
             ["markdownlint", "npm:0.24.0"],
-            ["markdownlint-cli2-formatter-default", "virtual:e250c7891cb3240d70c29443b598aeb800786c5ed3ca047d00abfef399897140ea68fd355e0dc859aefa725bb2956c1ee31d4ed493230a9a17d54135bbc62982#npm:0.0.2"],
+            ["markdownlint-cli2-formatter-default", "virtual:8af0fa570788b2df0d06c1d0bb7f10f59b54206a294571e8a07e52007b1e628bf5d1366e57220cbd2fbcbf72ccffba403dd0e5d481ef85f9bbd37954455a2868#npm:0.0.2"],
             ["markdownlint-rule-helpers", "npm:0.15.0"],
             ["micromatch", "npm:4.0.4"],
             ["strip-json-comments", "npm:3.1.1"],
@@ -273,12 +273,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:e250c7891cb3240d70c29443b598aeb800786c5ed3ca047d00abfef399897140ea68fd355e0dc859aefa725bb2956c1ee31d4ed493230a9a17d54135bbc62982#npm:0.0.2", {
-          "packageLocation": "./.yarn/__virtual__/markdownlint-cli2-formatter-default-virtual-4923468b07/0/cache/markdownlint-cli2-formatter-default-npm-0.0.2-b003a60a39-c1bd4b741a.zip/node_modules/markdownlint-cli2-formatter-default/",
+        ["virtual:8af0fa570788b2df0d06c1d0bb7f10f59b54206a294571e8a07e52007b1e628bf5d1366e57220cbd2fbcbf72ccffba403dd0e5d481ef85f9bbd37954455a2868#npm:0.0.2", {
+          "packageLocation": "./.yarn/__virtual__/markdownlint-cli2-formatter-default-virtual-8d3d427a8a/0/cache/markdownlint-cli2-formatter-default-npm-0.0.2-b003a60a39-c1bd4b741a.zip/node_modules/markdownlint-cli2-formatter-default/",
           "packageDependencies": [
-            ["markdownlint-cli2-formatter-default", "virtual:e250c7891cb3240d70c29443b598aeb800786c5ed3ca047d00abfef399897140ea68fd355e0dc859aefa725bb2956c1ee31d4ed493230a9a17d54135bbc62982#npm:0.0.2"],
+            ["markdownlint-cli2-formatter-default", "virtual:8af0fa570788b2df0d06c1d0bb7f10f59b54206a294571e8a07e52007b1e628bf5d1366e57220cbd2fbcbf72ccffba403dd0e5d481ef85f9bbd37954455a2868#npm:0.0.2"],
             ["@types/markdownlint-cli2", null],
-            ["markdownlint-cli2", "npm:0.3.1"]
+            ["markdownlint-cli2", "npm:0.3.2"]
           ],
           "packagePeers": [
             "@types/markdownlint-cli2",
@@ -366,7 +366,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["root-workspace-0b6124", "workspace:."],
-            ["markdownlint-cli2", "npm:0.3.1"]
+            ["markdownlint-cli2", "npm:0.3.2"]
           ],
           "linkType": "SOFT",
         }]
