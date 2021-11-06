@@ -46,6 +46,6 @@ Creare gli SSDT si può fare in 3 modi:
   * Sono universali, ma non insegnano nulla.
 * [SSDTTime](ssdt-easy.md)
   * Funziona meglio dei precompilati è ottimizzato per il tuo hardware, ma non impari nulla.
-* [Creazione manuale creating them](ssdt-long.md)
+* [Creazione manuale creating them](dump.md)
   * Funzionerà sempre, sarà molto più pulita e ti spiega il funzionamento dei file `.aml`
   * Tuttavia ti dovrai rapportare con il codice.
