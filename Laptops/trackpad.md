@@ -27,7 +27,7 @@ First open your decompiled DSDT you got from [Dumping the DSDT](/Manual/dump.md)
 
 Next search for `Device (GPI0)`. You should get a result similar to this:
 
-![](../../images/Laptops/trackpad-md/gpi0-2.png)
+![](../images/Laptops/trackpad-md/gpi0-2.png)
 
 Below is the `_STA` method, which enables or disable the GPI0 device:
 
