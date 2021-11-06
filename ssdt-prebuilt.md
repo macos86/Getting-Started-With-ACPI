@@ -63,13 +63,13 @@ Usato per resettare i controller USB sulla serie 400 di **Asus** e nei laptop Ic
 
 > Nota che le schede madri desktop Gigabyte, MSI, AsRock... non necessitano questo SSDT. **Solo Asus**
 
-### SSDT-PNLF e SSDT-PNLF-CFL
+### SSDT-PNLF
 
 Usato per controllare la retroilluminazione dei display dei laptop e AIO
 
-### [SSDT-XOSI | SSDT-GPI0](../Laptops/trackpad/)
+### SSDT-GPI0
 
-Richiesto **SOLO PER I TRACKPAD I2C**.
+[Maggiori riferimenti qui]((../Laptops/trackpad/))
 
 ### SSDT-UNC
 
@@ -138,7 +138,7 @@ Grazie!
 | Broadwell | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
 | Skylake | ^^ | [SSDT-EC-USBX-LAPTOP](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-EC-USBX-LAPTOP.aml) | ^^ | ^^ | ^^ | ^^ | ^^ |
 | Kaby Lake | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ | ^^ |
-| Coffee Lake (ottava Generazione) e Whiskey Lake | ^^ | ^^ | [SSDT-PNLF-CFL](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-PNLF-CFL.aml) | [SSDT-AWAC](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-AWAC.aml) | ^^ | ^^ | ^^ |
+| Coffee Lake (ottava Generazione) e Whiskey Lake | ^^ | ^^ | ^^ | [SSDT-AWAC](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-AWAC.aml) | ^^ | ^^ | ^^ |
 | Coffee Lake (nona Generazione) | ^^ | ^^ | ^^ | ^^ | ^^ | [SSDT-PMC](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-PMC.aml) | ^^ |
 | Comet Lake | ^^ | ^^ | ^^ | ^^ | ^^ | / | ^^ |
 | Ice Lake | ^^ | ^^ | ^^ | ^^ | [SSDT-RHUB](https://github.com/macos86/Getting-Started-With-ACPI/raw/main/extra-files/compiled/SSDT-RHUB.aml) | ^^ | ^^ |
