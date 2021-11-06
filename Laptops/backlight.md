@@ -50,6 +50,7 @@ For this guide, we're gonna assume Windows is already on this laptop, as otherwi
 0000:00:03.0 Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
 0000:00:04.0 System peripheral: InnoTek Systemberatung GmbH VirtualBox Guest Service
 ```
+
 Search the output for an entry that looks like your display adapter. E.g: In this example we have `VGA compatible controller` with PCI number `0000:00:02.0`. The format of this number is `domain:bus:device:function`.  
 
 Now use this command from a Terminal to find the ACPI path for your display adapter  
