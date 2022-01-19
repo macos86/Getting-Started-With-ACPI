@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "fixlint": "markdownlint-cli2-fix **/*.md \"#node_modules\""
+    "fixlint": "markdownlint-cli2-fix **/*.md \"!.yarn\""
   },
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
