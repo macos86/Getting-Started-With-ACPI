@@ -121,4 +121,3 @@ path/to/iasl path/to/DSDT.aml
 ```
 
 * If compiled .aml file is provided, a decompiled .dsl file will be given and vice versa.
-
