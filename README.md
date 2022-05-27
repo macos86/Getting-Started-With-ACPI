@@ -2,7 +2,14 @@
 home: true
 heroImage: /acpi-logo.png
 heroText: Iniziamo con gli ACPI by Dortania
-tagline:
+actions:
+  - text: SSDT Precompilati→
+    link: ssdt-prebuilt.md
+  - text: SSDTTime (Compilazione automatica)→
+    link: ssdt-easy.md
+  - text: Creazione manuale→
+    link: manual.md
+tagline: "Abbiamo tre metodi per creare i nostri SSDT:"
 ---
 
 # Iniziamo con ACPI
@@ -15,7 +22,7 @@ Puoi leggere maggiori informazioni riguardo alle specifiche ACPI qui: [Manuale A
 
 > Perciò, perché ci importano queste tabelle?
 
-macOS può essere testardo riguardo ai dispositivi presenti nel tuo DSDT e dovremmo correggerlo.
+macOS può essere ottuso riguardo ai dispositivi presenti nel tuo DSDT e dovremmo correggerlo.
 <!--I principali dispositivi che richiedono la correzione per funzionare correttamente:
 
 * Controller Integrati abbreviazione EC, da Embedded controller
@@ -37,15 +44,3 @@ macOS può essere testardo riguardo ai dispositivi presenti nel tuo DSDT e dovre
   * Necessarie per sistemare i conflitti IRQ con DSDT, principalmente per laptop. Esclusivo di SSDTTime
   * Nota che Skylake e sistemi più recenti hanno raramente conflitti IRQ, importante principalmente in Broadwell e meno recenti
 -->
-
-## Creiamo gli SSDT
-
-Creare gli SSDT si può fare in 3 modi:
-
-* [SSDT precompilati](ssdt-prebuilt.md)
-  * Sono universali, ma non insegnano nulla.
-* [SSDTTime](ssdt-easy.md)
-  * Funziona meglio dei precompilati è ottimizzato per il tuo hardware, ma non impari nulla.
-* [Creazione manuale creating them](dump.md)
-  * Funzionerà sempre, sarà molto più pulita e ti spiega il funzionamento dei file `.aml`
-  * Tuttavia ti dovrai rapportare con il codice.
