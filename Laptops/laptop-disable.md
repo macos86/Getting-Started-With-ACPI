@@ -25,7 +25,7 @@ Device Manager -> Display Adapters -> dGPU -> Properties -> Details > BIOS devic
 
 This should provided you with an ACPI path for your dGPU, most commonly:
 
-* Nvidia dGPU: `\_SB.PCI0.PEG0.PEGP`
+* NVIDIA dGPU: `\_SB.PCI0.PEG0.PEGP`
 * AMD dGPU: `\_SB.PCI0.PEGP.DGFX`
 
 ![Credit to 1Revenger1 for the image](../images/desktop/nvidia.png)
@@ -58,7 +58,7 @@ Device Manager -> Display Adapters -> dGPU -> Properties -> Details > BIOS devic
 
 This should provided you with an ACPI path for your dGPU, most commonly:
 
-* Nvidia dGPU: `\_SB.PCI0.PEG0.PEGP`
+* NVIDIA dGPU: `\_SB.PCI0.PEG0.PEGP`
 * AMD dGPU: `\_SB.PCI0.PEGP.DGFX`
 
 Now with that, we'll need to change the ACPI path in the SSDT. Main sections:
