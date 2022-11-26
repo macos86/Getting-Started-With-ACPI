@@ -84,7 +84,7 @@ The main things to note with this method:
 
 To find the ACPI pathing, you have 2 methods:
 
-* [DSDT](#DSDT)
+* [DSDT](#dsdt)
 * [DeviceManager](#devicemanager)
 
 ##### DSDT
@@ -165,7 +165,7 @@ When multiple PNP0C09 show up, we need to next check for the following propertie
 
 What these signify is whether this PNP0C09 device is real or not, as per the [ACPI spec](https://uefi.org/sites/default/files/resources/ACPI_6_3_final_Jan30.pdf). So one's matching the above criteria are the one's we want to disable.
 
-* Note: If _STA shows up as well, you'll need to go here: [PNP0C09 already has an `_STA` method](#pnp0c09-already-has-an-sta-method)
+* Note: If _STA shows up as well, you'll need to go here: [PNP0C09 already has an `_STA` method](#no-pnp0c09-show-up)
 
 ##### No PNP0C09 show up
 
